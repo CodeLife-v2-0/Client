@@ -1,0 +1,40 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 8.5);
+    background: linear-gradient(180deg, #E5E4E2 0%, #000000 600%);
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--vh, 1vh) * 4.5) 3vw calc(var(--vh, 1vh) * 4) 3vw;
+    color: #1A1B1D;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    z-index: 5;
+}
+
+.ouner_wrapper{
+    position: absolute;
+}
+
+.company_title {
+    font-size: var(--font25px);
+    justify-self:start;
+}
+
+.login_link{
+    font-size: var(--font18px);
+    margin-right: 6vw;
+    justify-self:flex-end;
+}
+
+
+.right_component{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,124 @@
+.header_menu {
+    height: 7.68519vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2.39583vw;
+    padding-right: 2.39583vw;
+    border-bottom: 0.27778vh solid #009aad;
+    position: relative;
+    z-index: 5;
+}
+
+.new__logo__style {
+    width: 9.21875vw;
+    height: 5.0vh;
+}
+
+.header_right {
+    display: flex;
+    height: 100%;
+    width: 10.88542vw;
+    align-items: center;
+    justify-content: space-between;
+    transition: margin-right 0.3s ease-in-out;
+}
+
+.translate__Block {
+    width: 1.5625vw;
+    height: 2.77778vh;
+    font-size: min(1.30208vw, 2.31481vh);
+    color: white;
+    cursor: var(--cursorState);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.settiggs__Block {
+    width: min(1.5625vw, 2.77778vh);
+    height: min(1.5625vw, 2.77778vh);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.settiggs__Block * {
+    cursor: var(--cursorState);
+}
+
+.settings__Block__svg {
+    --colorSecondForm: white;
+    width: 1.5625vw;
+    height: 2.77778vh;
+    fill: black;
+    transform: rotate(0deg);
+    transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.settings__Block__svg:hover {
+    --colorSecondForm: black;
+    fill: white;
+    transform: rotate(180deg);
+}
+
+.settings__second__form {
+    stroke: var(--colorSecondForm);
+    transition: stroke 0.3s ease-in-out;
+}
+
+.accont__Block {
+    width: min(1.5625vw, 2.77778vh);
+    height: min(1.5625vw, 2.77778vh);
+}
+
+.accont__Block * {
+    cursor: pointer;
+}
+
+.account__Block__svg {
+    width: 1.5625vw;
+    height: 2.77778vh;
+    fill: black;
+    transition: fill 0.3s ease-in-out;
+}
+
+.account__Block__svg:hover {
+    fill: white;
+}
+
+.account__main__Menu {
+    position: absolute;
+    z-index: 6;
+    right: -0.05208vw;
+    top: 7.4537vh;
+    width: 14.32292vw;
+    height: 12.77778vh;
+    overflow: hidden;
+    border-left: 0.15625vw solid #009aad;
+    border-bottom: 0.27778vh solid #009aad; 
+}
+.account__main__Menu__second {
+    width: 14.16667vw;
+    height: 12.5vh;
+    background-image: linear-gradient(180deg, #000 0%, #171717 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: min(1.30208vw, 2.31481vh);
+    font-weight: 400;
+    color: white;
+}
+
+.exit__menu__link{
+    width: 100%;
+    height: calc(100% /3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.exit__menu__link:hover{
+    color: #009aad;
+}

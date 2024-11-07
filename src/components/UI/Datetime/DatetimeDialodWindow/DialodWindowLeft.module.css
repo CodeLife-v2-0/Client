@@ -1,0 +1,78 @@
+.DialodWindowLeftWrapper{
+    width: 90%;
+    margin-left: 5%;
+    height: 100%;
+}
+.DialodWindowLeftHeader{
+    display: flex;
+    width: 100%;
+    height: 26%;
+    border-bottom: 1px solid black;
+}
+.DialodWindowLeftNumber{
+    position: relative;
+    width: 25%;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(to top, transparent 20%, black 20%, black 80%, transparent 80%);
+    border-image-slice: 1;
+}
+.DialodWindowLeftNumberDigit, .DialodWindowLeftNumberStage{
+    width: 100%;
+    top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    line-height: 3vw;
+}
+.DialodWindowLeftNumberStage{
+    top: 55%;
+    font-size: 1.2vw;
+    line-height: normal;
+}
+.DialodWindowLeftContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 74%;
+}
+.DialodWindowLeftText{
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    font-size: 1.4vw;
+    line-height: 1.6vw;
+}
+.DialodWindowLeftContentPoint{
+    font-size: 1vw;
+    text-align: justify;
+    margin-bottom: 8%;
+}
+.DialodWindowLeftContentPointTitle{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.DialodWindowLeftContentPointTitleButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.DialodWindowLeftContentPointTitleCancel, .DialodWindowLeftContentPointTitleSave{
+    border-radius: 3px;
+    font-size: 0.9vw;
+    border: 1px solid black;
+    width: 45%;
+    text-align: center;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    &:hover{
+        color: #d2cbc9;
+        background-color: #303233;
+    }
+}
+.DialodWindowLeftContentPoint3{
+    display: flex;
+}

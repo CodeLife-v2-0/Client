@@ -1,0 +1,23 @@
+.wrapper{
+    color: white;
+    font-family: comfortaa;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.title{
+    width: 91%;
+    margin-top: calc(var(--vh, 1vh) * 3.72);
+    margin-bottom: calc(var(--vh, 1vh) * 4.4);
+    font-size: var(--font25px);
+    text-align: right;
+}
+
+.body{
+    width: 91%;
+    font-size: var(--font17px);
+    text-indent: 2em;
+    text-align: justify;
+}

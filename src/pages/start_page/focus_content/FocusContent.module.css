@@ -1,0 +1,16 @@
+.wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 35vw;
+    
+}
+
+@media(max-width: 600px){
+    .wrapper{
+        align-items: center;
+        left: 0;
+        width: 100vw;
+    }
+}

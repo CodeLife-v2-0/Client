@@ -1,0 +1,62 @@
+.canvar__circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: calc(100vh * 3.8);
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.circle {
+    position: absolute;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 2vh 3vh rgba(255, 255, 255, 1);
+    z-index: 2;
+    opacity: 1;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.circle__stroke__in,
+.circle__stroke__out {
+    position: absolute;
+    width: 30vh;
+    height: 30vh;
+    opacity: 0;
+    border-radius: 50%;
+    color: black;
+    border: 2px solid white;
+    animation: circle_animaiton 1s infinite;
+    box-shadow: 0 0 1vh 0.5vh rgba(255, 255, 255, 1);
+    z-index: 2;
+    opacity: 1;
+}
+
+.circle__stroke__out {
+    box-shadow: 0 0 1vh 0.5vh rgba(255, 255, 255, 1) inset;
+}
+
+@keyframes circle_animaiton {
+    0% {
+        width: 30vh;
+        height: 30vh;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 10vh;
+        height: 10vh;
+        opacity: 1;
+    }
+
+}

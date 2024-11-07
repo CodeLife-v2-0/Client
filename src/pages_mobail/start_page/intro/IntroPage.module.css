@@ -1,0 +1,9 @@
+.wrapper{
+    background: linear-gradient(180deg, #E5E4E2 0%, #000000 50%);
+    width: 100vw;
+    height: var(--mobileheigth);
+    transition: background-image s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

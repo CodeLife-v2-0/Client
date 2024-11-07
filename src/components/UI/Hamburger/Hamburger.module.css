@@ -1,0 +1,15 @@
+.wrapper{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.line{
+    content: " ";
+    background-color: black;
+    width: 100%;
+    height: var(--font2px);
+    border-radius: var(--font2px);
+}

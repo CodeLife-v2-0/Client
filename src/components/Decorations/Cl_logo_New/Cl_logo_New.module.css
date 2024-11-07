@@ -1,0 +1,28 @@
+.main__logo{
+    --spreadshadow: min(0vw, 0vh);
+    width: 100%;
+    height: 100%;
+    border: min(0.10417vw, 0.18519vh) solid white;
+    border-radius: min(0.78125vw, 1.38889vh);
+    background-color: black;
+    box-shadow: 0 0 min(0.52083vw, 0.92593vh) calc(min(0.20833vw, 0.37037vh) - var(--spreadshadow)) rgba(255,255,255,0.45);
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    overflow: visible;
+    color: white;
+    font-size: min(1.82292vw, 3.24074vh);
+    font-weight: 600;
+}
+.main__logo__shadowing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: min(0.78125vw, 1.38889vh);
+    box-shadow: 0 0 min(0.52083vw, 0.92593vh) var(--spreadshadow) rgba(255,255,255,0.45) inset;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+.main__logo:hover{
+    --spreadshadow: min(0.20833vw, 0.37037vh);
+}

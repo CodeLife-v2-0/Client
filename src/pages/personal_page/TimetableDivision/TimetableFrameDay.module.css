@@ -1,0 +1,326 @@
+.wrapper {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.timeWrapper{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    border-right: 1px solid #009AAD;
+    flex-direction: column;
+}
+.timeCellWrapper{
+    width: 25%;
+    height: 100%;
+    color: #009AAD;
+    font-size: 1vw;
+    padding-left: 0.5em;
+    border-right: 1px solid #009AAD;
+}
+.timeTitle, .dayNameTitle{
+    width: 25%;
+    border-right: 1px solid #009AAD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dayNameTitle{
+    width: 75%;
+    border: none;
+}
+.timeCell{
+    height: calc(100% / 30);
+    position: relative;
+}
+.lessonsCardCloseWrapper{
+    height: calc(100% - 8vh);
+    width: 100%;
+    display: flex;
+}
+.lessonsCardClose{
+    height: 100%;
+    width: 75%;
+    position: relative;
+}
+.lessonCardClose{
+    position: absolute;
+    width: 90%;
+    height: 12%;
+    left: 5%;
+    top: 14%;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 5px;
+    border: 1px solid #009AAD;
+}
+.lessonCardCloseInfo{
+    display: flex;
+    height: 90%;
+}
+.lessonCardCloseText{
+    display: flex;
+    width: 70%;
+    margin-right: 1em;
+    font-size: 1.2vw;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-style: italic;
+}
+.lessonCardCloseImg{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.lessonCardCloseUnderline{
+    width: 100%;
+    height: 10%;
+    border-radius: 0 0 5px 5px;
+}
+.lessonInfoWrapper{
+    width: 80%;
+}
+.noChouseLesson{
+    color: #009AAD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.titleCardRow {
+    width: 100%;
+    padding: 1vh 0 1vh;
+    height: 8vh;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #009AAD;
+    display: flex;
+    border-bottom: 1px solid #009AAD;
+}
+
+.titleCard {
+    width: calc(100% / 7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleCard:not(:last-of-type) {
+    border-right: #009AAD 1px solid;
+}
+
+.cardRow {
+    width: 100%;
+    display: flex;
+    height: calc((100% - 8vh) / 4);
+    border-top: #009AAD 1px solid;
+}
+
+.cardDay {
+    width: calc(100%/7);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dayNumber {
+    font-weight: 700;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #009AAD;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30%;
+    width: 90%;
+}
+
+.cardDay:not(:last-of-type) {
+    border-right: #009AAD 1px solid;
+}
+
+.card_lesson {
+    width: 96%;
+    height: 18.5%;
+    padding-right: 5%;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    margin-bottom: 1.5%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card_lesson:hover {
+    background-color: #a1c8f6;
+}
+
+.card_lesson>img {
+    --side_img: min(1.05vw, 1.8vh);
+    margin-left: 3%;
+    width: var(--side_img);
+    height: var(--side_img);
+}
+
+.card_lesson__subject_title {
+    margin-left: 4.5%;
+    font-family: 'AlegreyaI';
+    font-weight: 700;
+    font-size: 1vw;
+    text-align: center;
+    color: #333232;
+}
+
+.card_lesson__timeframe {
+    margin-left: auto;
+    font-family: 'AlegreyaI';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1vw;
+    text-align: center;
+    color: #000000;
+}
+
+.card_lesson__timeframe {
+    cursor: pointer;
+}
+
+.card_lesson__other_lessons {
+    font-family: 'Alegreya';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #009AAD;
+    cursor: pointer;
+}
+
+
+.OpenLessonCard__wrapper {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OpenLessonCard__wrapper_inner {
+    width: 60%;
+    height: 60%;
+    background: #D9D9D9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OpenLessonCard__header {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    height: 12%;
+}
+
+.OpenLessonCard__header>div:first-of-type {
+    width: 55%;
+}
+.OpenLessonCard__header>div:last-of-type {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.OpenLessonCard__underlink{
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin: 0.5em 0;
+}
+.OpenLessonCard__title {
+    margin-top: 2.7%;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2vw;
+    line-height: 2.4vw;
+    color: #000000;
+}
+
+.OpenLessonCard__time {
+    margin-top: 4.5%;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.OpenLessonCard__close{
+    font-size: 3vw;
+}
+.OpenLessonCard__body{
+    height: 75%;
+    width: 95%;
+    font-family: 'Comfortaa';
+    font-style: normal;
+}
+.OpenLessonCard__lessonTheme{
+    margin-top: 1em;
+    font-size: 1.7vw;
+    font-weight: 700;
+}
+.OpenLessonCard__description{
+    font-size: 1.4vw;
+    margin-top: 1em;
+    line-height: 2vw;
+}
+.OpenLessonCard__mainContent{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    margin-top: 1em;
+}
+.OpenLessonCard__leftSide{
+    width: 39%;
+    height: 100%;
+}
+.OpenLessonCard__leftSide > div{
+    margin-top: 0.6em;
+}
+.OpenLessonCard__rightSide{
+    width: 49%;
+    height: 100%;
+    margin-left: 10%;
+}
+.OpenLessonCard__verticalLine{
+    height: 100%;
+    width: 1px;
+    background-color: black;
+}
+.OpenLessonCard__underText{
+    margin-top: 0.5em;
+    padding-bottom: 0.2em;
+    width: 90%;
+    border-bottom: 1px solid black;
+}

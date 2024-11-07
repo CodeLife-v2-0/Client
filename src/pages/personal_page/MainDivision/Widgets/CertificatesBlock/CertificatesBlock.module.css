@@ -1,0 +1,7 @@
+.main__Certificates__Block{
+    width: 31.25vw;
+    height: 100%;
+    border: min(0.05208vw, 0.09259vh) solid #009aad;
+    border-radius: min(0.52083vw, 0.92593vh);
+    background-color: rgba(0, 0, 0, 0.10);
+}

@@ -1,0 +1,97 @@
+.main_wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.local_wrapper {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.wrapper {
+    pointer-events:all;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    z-index: 4;
+    width: 40%;
+    height: 40%;
+    background-color: black;
+    border-radius: 25px 25px 10px 10px;
+    background: linear-gradient(30.73deg, #292B2F 18.64%, #1A1E1F 87.5%);
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 15px 3px #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+}
+
+.wrapper_header {
+    width: 94%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.wrapper_footer{
+    transition: color 0.5s ease-in-out;
+}
+
+.inner_wrapper{
+    background: #d2d8df;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-evenly;
+}
+
+.main_text, .wrapper_footer{
+    width: 80%;
+    text-align: center;
+}
+
+.close{
+    cursor: pointer;
+}
+
+.loader{
+    width: 40%;
+    height: 15%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #24282C;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}

@@ -1,0 +1,87 @@
+.wrapper_navigation {
+    display: flex;
+    border-right: 0.10417vw solid #009aad ;
+    background-color: #000;
+    width: var(--nav_width);
+    height: calc(100vh - var(--header_height));
+    flex-direction: column;
+    align-items: center;
+    color: var(--additional_color);
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--nav_menu_point_font_size) * var(--font_size_nav_multi));
+    line-height: var(--nav_menu_line_height);
+    flex: initial;
+}
+.wrapper_navigation span:first-of-type {
+    font-size: calc(var(--nav_name_font_size) * var(--font_size_nav_multi));
+    font-weight: 800;
+    margin-bottom: 0.7vw;
+}
+.wrapper_navigation span:not(:first-of-type) {
+    margin-bottom: var(--nav_menu_pont_mb)
+}
+
+.wrapper_navigation span:hover:not(:first-of-type) {
+    color: var(--main_color)
+}
+
+.wrapper_navigation span {
+    transition: color 1s ease-in-out
+}
+
+
+.user_full_name {
+    margin-bottom: var(--user_full_name_mb)
+}
+
+.avatar_block {
+    width: 12vh;
+    height: 12vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    border-radius: min(0.52083vw, 0.92593vh);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 4px 1px white;
+}
+
+.avatar_block img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_input {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    z-index: 2;
+    top: 60%;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+
+.refresh_photo {
+    cursor: pointer;
+    padding-top: 10%;
+    border-radius: min(0.52083vw, 0.92593vh);
+    border: 1px white solid;
+    font-size: 0.9vw;
+    position: absolute;
+    background: black;
+    color: white;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5em;
+}

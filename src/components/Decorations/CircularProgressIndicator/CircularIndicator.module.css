@@ -1,0 +1,25 @@
+.circle {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .track {
+    stroke-width: 6;
+  }
+  
+  .progress {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: butt;
+    transform-origin: center;
+    transform: rotate(-90deg);
+  }
+  
+  .text {
+    font-size: var(--font16px);
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: white;
+  }
+  
+  

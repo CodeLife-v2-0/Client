@@ -1,0 +1,100 @@
+.selector_styles {
+    width: 20%;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-radius: 0px 0px 70px 0px;
+    border-color: #016F12;
+    padding-left: 0.5vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: max(3vw, 20px);
+    line-height: max(4vw, 35px);
+    background-color: black;
+    opacity: var(--selector-opacity);
+    display: var(--selector-display);
+    transition: opacity 0.5s ease, display 0s ease 0.5s;
+}
+
+.solo_selector_styles {
+    width: 25%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: max(3vw, 20px);
+    line-height: max(3.2vw, 24px);  
+    background-color: black;
+    opacity: var(--selector-opacity);
+    display: var(--selector-display);
+    transition: opacity 0.5s ease, display 0s ease 0.5s;
+}
+
+.lang {
+    cursor: pointer;
+    font-size: max(2.6vw, 16px);
+}
+
+.active {
+    color: #016F12;
+    text-shadow: 1px 1px 15px #016F12;
+}
+
+.anactive {
+    color: white;
+}
+
+.anactive:hover {
+    text-shadow: 1px 1px 15px white;
+}
+
+.solo_leng {
+    color: white;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.solo_leng:hover {
+    text-shadow: 0px 0px 20px white;
+    padding: 0;
+}
+
+@media(max-width: 1450px){
+    .selector_styles {
+        justify-content: center;
+        font-size: min(2.5vw, 3.5vh);
+        line-height: min(2.5vw, 3.5vh);
+    }
+    .solo_selector_styles{
+        font-size: min(2.2vw, 3.1vh);
+        line-height: min(2.2vw, 3.1vh);
+    }
+    .lang {
+        font-size: min(2.2vw, 3.1vh);
+    }
+}
+
+@media(max-width: 1000px){
+    .selector_styles {
+        justify-content: start;
+    }
+}
+
+@media(max-width: 600px){
+    .selector_styles {
+        font-size: max(5vw, 20px);
+    }
+    .solo_selector_styles {
+        font-size: max(5vw, 20px);
+    }
+    .lang {
+        font-size: min(3.4vw, 4.2vh);
+    }
+}

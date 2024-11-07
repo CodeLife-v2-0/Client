@@ -1,0 +1,10 @@
+.ballIndicator {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 3;
+}

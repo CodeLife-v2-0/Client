@@ -1,0 +1,21 @@
+.animatedTextCursor {
+    display: inline-block;
+    width: 0.8em;
+    height: 1.2em;
+    vertical-align: bottom;
+    margin-left: 0.1em;
+    background-color: #016F12;
+    animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+
+    from,
+    to {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: var(--animated_cursor_color);
+    }
+}

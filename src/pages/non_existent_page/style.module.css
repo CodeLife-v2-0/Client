@@ -1,0 +1,235 @@
+.main_background {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: space-between;
+}
+.left_part{
+    width: 50vw;
+}
+
+.local_header {
+    position: absolute;
+    height: 10vh;
+    width: 50vw;
+    top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #009aad;
+}
+.local_header_mobile{
+    display: none;
+}
+
+#company_title_404 {
+    font-size: max(4vw, 40px);
+    text-align: center;
+}
+#company_title_mobile_404{
+    display: none;
+}
+
+.error_ntf {
+    font-size: max(5vw, 40px);
+    text-align: center;
+    text-align: center;
+}
+
+.local_midle {
+    position: relative;
+    top: 38vh;
+    height: 55vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error_code {
+    font-size: min(max(8vw, 80px), 110px);
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 0 #009aad, -2px -2px 0 #009aad, 2px -2px 0 #009aad, -2px 2px 0 #009aad;
+    z-index: 1;
+}
+
+.button_block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45vw;
+}
+.button_block_mobile{
+    display: none;
+}
+
+.glow_element {
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#aminated404{
+    top: calc(0.15 * max(8vw, 80px));
+    left: -50vw;
+    height: calc(0.7 * max(8vw, 80px));
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        text-shadow: 0 0 20px rgba(0, 154, 173, 1);
+    }
+}
+
+.girl_image {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    width: 50vw;
+}
+
+.blur_animation {
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation: blur 6s infinite;
+}
+
+#button_404_gomain{
+    font-size: max(2.5vw, 20px);
+}
+
+#button_404_goLC{
+    font-size: max(2.5vw, 20px);
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(10px);
+    }
+
+    20% {
+        filter: blur(0px);
+    }
+
+    80% {
+        filter: blur(0px);
+    }
+    90% {
+        filter: blur(2px);
+    }
+
+    100% {
+        filter: blur(5px);
+    }
+}
+
+@media(max-width: 700px){
+    .main_background{
+        display: block;
+    }
+    .company_title_wrapper{
+        display: none;
+    }
+    #company_title_404{
+        display: none;
+    }
+    #company_title_mobile_404{
+        display: flex;
+        font-size: max(4vw, 40px);
+        width: 100vw;
+        height: calc(1.6 * max(4vw, 40px));
+        justify-content: center;
+        align-items: center;
+        border-bottom: 4px solid #009aad;
+    }
+    .girl_image{
+        height: 50vh;
+        left: 25vw;
+        z-index: 0;
+    }
+    .local_midle{
+        top: 0;
+        left: 25vw;
+        height: 100%;
+    }
+    #aminated404{
+        left: -25vw;
+        top: calc(0.3 * max(8vw, 60px));
+        height: calc(0.7 * max(8vw, 60px));  
+    }
+    .error_code{
+        width: 100vw;
+        border-top: 8px solid #009aad;
+        border-bottom: 8px solid #009aad;
+    }
+    .local_header{
+        display: none;
+    }
+    .local_header_mobile{
+        display: flex;
+        position: relative;
+        width: 100vw;
+        justify-content: center;
+        color: #009aad;
+    }
+    .button_block{
+        display: none;
+    }
+    .button_block_mobile{
+        display: flex;
+        position: absolute;
+        width: 90vw;
+        top: 30vh;
+        justify-content: space-between;
+        margin-left: 5vw;
+    }
+    #button_404_gomain{
+        font-size: max(4vw, 10px);
+        width: 27vw;
+        padding: 1vh;
+    }
+    #button_404_goLC{
+        font-size: max(4vw, 10px);
+        width: 27vw;
+        padding: 1vh;
+    }
+    .error_ntf{
+        width: 100vw;
+        border-bottom: 5px solid #009aad;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: min(max(5vw, 40px), 6vh);
+    }
+    .error_code {
+        font-size: max(8vw, 60px);
+    }
+}
+
+@media(max-width: 426px){
+    .girl_image{
+        width: 80vw;
+        left: 10vw;
+    }
+    .button_block_mobile{
+        top: 92vh;
+    }
+    #button_404_gomain{
+        font-size: min(2vh, 14px);
+        width: 40vw;
+    }
+    #button_404_goLC{
+        font-size: min(2vh, 14px);
+        width: 40vw;
+    }
+}

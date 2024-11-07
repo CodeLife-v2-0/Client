@@ -1,0 +1,55 @@
+.main__Notifications{
+    width: 31.25vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: min(0.05208vw, 0.09259vh) solid #009aad;
+    border-radius: min(0.52083vw, 0.92593vh);
+    overflow: hidden;
+}
+
+.main__Header__Block__Notifications{
+    display: flex;
+    width:100%;
+    height: 5.74074vh;
+}
+.NtfLsn__Title{
+    --extend__width: 0%;
+    position: relative;
+    --br: min(0.52083vw, 0.92593vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    font-size: min(1.30208vw, 2.31481vh);
+    color: white;
+    font-weight: 600;
+    user-select: none;
+    border-left: min(0.05208vw, 0.09259vh) solid #009aad;
+}
+.NtfLsn__Title::after{
+    opacity: var(--opacity);
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 0.09259vh;
+    bottom: 0.3vh;
+    left: 0;
+    background: linear-gradient(to right, transparent, white, transparent);
+    transition: background-size 0.3s ease;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: var(--extend__width);
+}
+.NtfLsn__Title:first-of-type{
+    border-radius: var(--br) 0 0 0;
+}
+.NtfLsn__Title:last-of-type{
+    border-radius: 0 var(--br) 0 0;
+}
+
+
+.main__Content__Block__Notifications{
+    width:100%;
+    height: 49.81481vh;
+}

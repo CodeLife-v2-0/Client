@@ -1,0 +1,25 @@
+.wrapper{
+    border-width: min(0.05208vw, 0.09259vh);
+    border-style: solid; 
+    width: 15.72917vw;
+    height: 5.55556vh;
+    border-radius: min(0.52083vw, 0.92593vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: min(1.30208vw, 2.31481vh);
+    transition:  border-color 0.3s ease-in-out;
+    background-color: transparent;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.wrapper::placeholder{
+    color: #343434;
+}
+
+.wrapper:focus{
+    outline: none;
+}

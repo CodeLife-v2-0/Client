@@ -1,0 +1,218 @@
+
+.main__form__bg{
+    position: relative;
+    z-index: 4;
+    background-color: rgb(217, 217, 217);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 0 0.5em 0.5em 0;
+}
+/* .main__form__bg img{
+    width: 40px;
+    height: 40px;
+} */
+.main__form__bg__left{
+    width: 60%;
+    height: 100%;
+    border-right: 1px solid black;
+}
+.main__form__bg__right{
+    width: 40%;
+    height: 100%;
+}
+.left__form__title, .right__form__title{
+    display: flex;
+    align-items: center;
+    height: 14%;
+    position: relative;
+}
+.right__form__title{
+    justify-content: space-between;
+}
+.left__form__title__text, .right__form__title__text{
+    font-size: 1.7vw;
+    width: 75%;
+    text-align: center;
+    font-weight: 1000;
+}
+.right__form__title__text{
+    width: 70%;
+}
+.left__form__title__image{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+.right__form__title__img{
+    margin-right: 10%;
+}
+.left__form__title__image > img{
+    width: 45px;
+    height: 45px;
+}
+.right__form__title__img > img{
+    width: 45px;
+    height: 45px;
+}
+.left__form__title__border, .right__form__title__border{
+    position: absolute;
+    width: 94%;
+    height: 1px;
+    background-color: black;
+    top: 100%;
+    left: 3%;
+}
+.right__form__title__borderv{
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background-color: black;
+    top: 10%;
+    left: 70%;
+}
+.left__form__content, .right__form__contect{
+    overflow: hidden;
+    height: 86%;
+}
+.left__form__content__title{
+    display: flex;
+    margin-top: 0.3em;
+    margin-left: 0.5em;
+    height: 10%;
+    font-weight: 1000;
+    font-size: 1.2vw;
+}
+.right__form__content__image{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+    height: 8vw;
+}
+.right__form__content__image > img{
+    height: 100%;
+    object-fit: contain;
+    border: 2px solid black;
+    border-radius: 2.5vw;
+}
+.left__form__content__title__text{
+    width: 68%;
+    display: flex;
+    align-items: center;
+}
+.left__form__content__title__time{
+    display: flex;
+    margin-top: -0.1em;
+    align-items: center;
+    justify-content: space-between;
+    width: 27%;
+}
+.left__form__content__title__time > img{
+    width: 27px;
+    height: 27px;
+}
+.left__form__content__title__time__text{
+    margin-top: 0.1em;
+}
+.left__form__content__theme{
+    margin-left: 0.5em;
+    height: 75%;
+}
+.left__form__content__theme__text{
+    font-weight: 1000;
+    line-height: 2em;
+    font-size: 1.2vw;
+}
+.left__form__content__theme__title{
+    width: 100%;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 1.2vw;
+    margin-bottom: 0.5em;
+}
+.left__form__content__theme__description{
+    text-align: justify;
+    width: 95%;
+    margin-left: 0.5em;
+    line-height: 1.4em;
+    font-size: 1vw;
+    margin-bottom: 2em;
+}
+.left__form__content__theme__table{
+    display: flex;
+    font-size: 0.8vw;
+    position: relative;
+    height: 50%;
+}
+.left__form__content__theme__table__left{
+    width: 40%;
+}
+.left__form__content__theme__table__border{
+    position: absolute;
+    width: 1px;
+    background-color: black;
+    top: 0%;
+    left: 40%;
+    height: 20vh;
+}
+.left__form__content__theme__table__left__title{
+    margin-bottom: 1em;
+    font-weight: 1000;
+}
+.left__form__content__theme__table__left__object{
+    line-height: 1.6em;
+    margin-left: 0.8em;
+}
+.left__form__content__theme__table__left__object > b{
+    font-size: 1.3vw;
+    display: inline-block;
+    transform: translate(-50%, 20%);
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.left__form__content__theme__table__right{
+    margin-left: 3em;
+    width: 60%;
+}
+.left__form__content__theme__table__right__task{
+    height: 50%;
+}
+.left__form__content__button__next{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.left__form__content__button__next__text{
+    width: 15%;
+    text-align: center;
+}
+.left__form__content__button__next > img{
+    width: 2.5vw;
+    height: 2.5vw;
+    object-fit: contain;
+}
+.right__form__content__name{
+    margin-top: 0.5em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+.right__form__content__table:first-child{
+    margin-top: 5%;
+}
+.right__form__content__row__1{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.right__form__content__row__right__array{
+    text-align: right;
+    line-height: 1.5em;
+}

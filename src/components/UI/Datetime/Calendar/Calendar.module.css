@@ -1,0 +1,98 @@
+.calendarWrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 50, 51, 1);
+    color: white;
+    position: relative;
+}
+.calendarMohtnAndYearHeader{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    font-size: 1.4vw;
+}
+.calendarMohtn{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendarYear{
+    width: 7%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendarDaysHeader{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid white;
+}
+.calendarDayHeader{
+    width: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendarDaysNumbers{
+    width: 100%;
+    height: 72%;
+    font-size: 1.2vw;
+}
+.calendarDayRow{
+    display: flex;
+    width: 100%;
+}
+.calendarDayCell{
+    width: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 50, 51, 1);
+    border: 5px double transparent;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.calendarDayCell:hover{
+    border: 5px double rgba(255, 255, 255, 0.5);
+    background-color: rgba(11, 145, 255, 0.5);
+}
+.calendarDayCellPoint3{
+    width: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 50, 51, 1);
+    border: 5px double transparent;
+}
+.calendarChouseTime{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 50, 51, 1);
+}
+.calendarChouseTimeRow{
+    display: flex;
+    width: 100%;
+    height: calc(100% / 4);
+}
+.calendarChouseTimeCell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+    width: calc(100% / 3);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+    background-color: rgba(48, 50, 51, 1);
+    border: 1px solid transparent;
+    &:hover{
+        background-color: rgba(11, 145, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}
+

@@ -1,0 +1,15 @@
+.wrapper{
+    margin-top: calc(var(--vh, 1vh) * 8.5);
+    width: 93.6%;
+    height: 62%;
+    border-radius: var(--font15px);
+    background-color: #1A1B1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.transitionMargin{
+    transition: margin-left 0.5s ease-in-out;
+}

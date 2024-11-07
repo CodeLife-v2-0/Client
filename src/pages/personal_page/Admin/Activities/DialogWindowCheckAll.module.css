@@ -1,0 +1,41 @@
+.wrapper {
+    border-bottom: #191c1d 3px double;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.innerWrapper {
+    width: 94%;
+    height: 96%;
+    border-left: #191c1d 3px double;
+    display: flex;
+}
+
+.leftInnerWrapper {
+    width: 38%;
+    height: 100%;
+    font-size: min(1vw, 2vh);
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftInnerWrapper>p:last-of-type {
+    height: 9em;
+}
+
+.leftInnerWrapper>p:last-of-type>ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.rightInnerWrapper{
+    width: 62%;
+}

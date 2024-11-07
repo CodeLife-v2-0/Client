@@ -1,0 +1,31 @@
+.wrapepr {
+    width: 86%;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+}
+
+.nav_link {
+    height: calc(var(--vh, 1vh) * 6.446);
+    margin-top: calc(var(--vh, 1vh) * 1.347);
+    padding-left: 4.533vw;
+    padding-right: 4.533vw;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(6.667vw, calc(var(--vh, 1vh) * 3.74));
+    line-height: calc(var(--vh, 1vh) * 4.19);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: min(1.35vw, calc(var(--vh, 1vh) * 0.75));
+}
+
+.logo{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 1px solid;
+    transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}

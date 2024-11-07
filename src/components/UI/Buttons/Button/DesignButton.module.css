@@ -1,0 +1,19 @@
+.DesignButton{
+    cursor: pointer;
+    width: 18vw;
+    padding: 2vh 1vh;
+    background-color: black;
+    border: #009aad 2px solid;
+    transition-property: background-color, color, border-radius, border-color;
+    transition-duration: 1s;
+    color: #009aad;
+    border-radius: 1vw;
+    font-size: 30px;
+}
+
+.DesignButton:hover{
+    border-radius: 3vw;
+    background-color: #009aad;
+    color: aliceblue;
+    border-color: aliceblue;
+}

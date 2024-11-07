@@ -1,0 +1,41 @@
+.wrapper {
+    height: 96vh;
+    width: 6.5vw;
+    margin-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5000;
+}
+
+.AsideMenu {
+    width: 100%;
+    height: var(--asideMenuHoverHeight);
+    border-radius: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(1.2 * 3vw);
+    line-height: min(5.4vw, 67px);
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15vh;
+    left: 0;
+    position: absolute;
+    transition: width 1s ease, height 1s ease, left 1s ease, top 1s ease, border-color 1s ease, color 1s ease, font-size 0.5s ease-in-out;
+}
+
+.AsideMenu:hover {
+    width: var(--asideMenuHoverWidth);
+    height: var(--asideMenuHoverHeight);
+    border-radius: 0px 70px 70px 0px;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    left: -5vw;
+    top: 0;
+}

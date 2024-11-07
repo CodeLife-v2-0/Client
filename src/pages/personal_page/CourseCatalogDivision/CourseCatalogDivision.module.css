@@ -1,0 +1,352 @@
+.CourseCatalogDivisionWrapper {
+    position: relative;
+    width: 85.46875vw;
+    height: 92.5vh;
+    padding: 4.62963vh 4.16667vw 1.82292vw 4.16667vw;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(150deg, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 1) 40%, rgba(133, 133, 133, 1) 100%);
+    border-left: 0.05208vw solid #009aad;
+    color: white;
+}
+
+.CourseCatalogDivisionChousePage{
+    position: absolute;
+    width: 85.46875vw;
+    height: 92.5vh;
+    padding: 3.42593vh 1.92708vw 3.42593vh 1.92708vw;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.chouseRow{
+    display: flex;
+    gap: 2.29167vw;
+    margin-bottom: 2.26562vw;
+    transition: background-color 0.3s ease-in-out;
+}
+.chouseCell{
+    border: 0.05208vw solid rgba(221, 221, 221, 1);
+    width: min(4.16667vw, 7.40741vh);
+    height: min(4.16667vw, 7.40741vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(2.60417vw, 4.62963vh);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.chouseCell:hover{
+    background-color: rgba(231, 231, 231, 0.75);
+    color:rgba(37, 37, 37, 1);
+}
+.CourseCatalogDivisionHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.60417vw;
+}
+.CourseCatalogDivisionHeaderSearch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26.04167vw;
+    transition: opacity .3s ease-in-out;
+}
+.CourseCatalogDivisionHeaderSearchContent{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CourseCatalogDivisionHeaderSearchContentSearchImg{
+    position: relative;
+    display: flex;
+    width: min(1.875vw, 3.33333vh);
+    height: min(1.875vw, 3.33333vh);
+}
+
+.CourseCatalogDivisionHeaderSearchContentSearchImg > img{
+    position: absolute;
+    width: 1.875vw;
+    object-fit: contain;
+    object-position: center center;
+    overflow: visible;
+}
+
+.CourseCatalogDivisionPipe{
+    width: 0.10417vw;
+    height: 3.7037vh;
+    margin-left: 0.98958vw;
+    margin-right: 0.98958vw;
+    background-color: white;
+}
+.CourseCatalogDivisionHeaderSettings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CourseCatalogDivisionHeaderSettings > img{
+    width: 1.875vw;
+    object-fit: contain;
+    object-position: center center;
+    overflow: visible;
+}
+.CourseCatalogDivisionHeaderName{
+    font-size: min(2.08333vw, 3.7037vh);
+    position: relative;
+    width: 15.625vw;
+    height: 4.07407vh;
+}
+.CourseCatalogDivisionHeaderName > div{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.main_text{
+    transition: opacity .3s ease-in-out;
+}
+.anactive{
+    animation: disappearanceСhoice;
+    animation-fill-mode: forwards;
+    animation-duration: .3s;
+    opacity: 0;
+}
+
+@keyframes disappearanceСhoice {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.active{
+    animation: appearanceСhoice;
+    opacity: 0;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appearanceСhoice {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.CourseCatalogDivisionHeaderSearchText{
+    font-size: min(1.5625vw, 2.77778vh);
+    margin-right: 1.14583vw;
+    font-weight: 300;
+    transition: font-weight 0.3s ease-in-out;
+}
+
+.CourseCatalogDivisionAllCategories{
+    position: absolute;
+    top: 13.7%;
+    width: 85.46875vw;
+    z-index: 3;
+    transition: opacity .3s ease-in-out;
+}
+
+.CourseCatalogDivisionCategoriesHeaderName,
+.CourseCatalogDivisionCategoriesHeaderCell{
+    width: 10.67708vw;
+    border: 0.05208vw solid white;
+    border-radius: 0.15625vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0px 0px min(3.125vw, 5.55556vh) min(0.52083vw, 0.92593vh) transparent;
+    transition: background-color .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out, box-swadow .3s ease-in-out;
+}
+.CourseCatalogDivisionCategoriesHeaderName:hover,
+.CourseCatalogDivisionCategoriesHeaderCell:hover{
+    background-color: rgba(214, 214, 214, 0.25);
+}
+.CourseCatalogDivisionCategoriesHeader,
+.CourseCatalogDivisionCategoriesRow{
+    width: 85.46875vw;
+    height: 4.62963vh;
+    display: flex;
+    gap: 2.60417vw;
+    margin-bottom: 4.62963vh;
+    font-size: min(1.5625vw, 2.77778vh);
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+.CourseCatalogDivisionCategoriesRow{
+    animation: aneble .3s;
+    height: 9.25926vh;
+}
+@keyframes aneble{
+    0%{
+        opacity: 0;
+        height: 4.62963vh;
+    }
+    100%{
+        opacity: 1;
+        height: 9.25926vh;
+    }
+}
+.CourseCatalogDivisionContent{
+    width: 85.46875vw;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+.CourseCatalogDivisionContentRow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.62963vh;
+    width: 77.08333vw;
+    height: 26.85185vh;
+}
+.CourseCatalogDivisionContentRow:last-child{
+    margin-bottom: 0;
+}
+.CourseCatalogDivisionContentRow:nth-child(2) > .CourseCatalogDivisionContentCell:nth-child(1){
+    border-radius: 0px min(0.9375vw, 1.66667vh) 0px min(0.9375vw, 1.66667vh);
+}
+.CourseCatalogDivisionContentRow:nth-child(2) > .CourseCatalogDivisionContentCell:nth-child(2){
+    border-radius: min(0.9375vw, 1.66667vh) 0px min(0.9375vw, 1.66667vh) 0px;
+}
+.CourseCatalogDivisionContentCell{
+    width: 48%;
+    height: 100%;
+    border: 0.05208vw solid transparent; 
+    border-radius: min(0.9375vw, 1.66667vh) 0px min(0.9375vw, 1.66667vh) 0px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.CourseCatalogDivisionContentCell:hover{
+    border-radius: min(0.9375vw, 1.66667vh) 0px min(0.9375vw, 1.66667vh) 0px;
+    border: 0.05208vw solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.CourseCatalogDivisionContentRow:nth-child(1) > .CourseCatalogDivisionContentCell:nth-child(2){
+    border-radius: 0px min(0.9375vw, 1.66667vh) 0px min(0.9375vw, 1.66667vh);
+}
+.CourseCatalogDivisionContentCellName{
+    writing-mode: vertical-lr;
+    font-size: min(1.5625vw, 2.77778vh);
+    letter-spacing: 0.2em;
+    width: 8%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0.05208vw solid white;
+}
+.CourseCatalogDivisionContentCell:nth-child(2){
+    justify-content: end;
+}
+.CourseCatalogDivisionContentCell:nth-child(1) > .CourseCatalogDivisionContentCellName{
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+}
+.CourseCatalogDivisionContentCellDescription{
+    height: 84%;
+    text-align: justify;
+    line-height: 2.44em;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 10%;
+    width: 75%;
+    font-size: min(0.83333vw, 1.48148vh);
+    border: 0.05208vw solid transparent;
+    border-image: linear-gradient(to left, white 0%, transparent 100%);
+    border-image-slice: 1;
+}
+.CourseCatalogDivisionContentCell:nth-child(2) > .CourseCatalogDivisionContentCellDescription{
+    border: 0.05208vw solid transparent;
+    border-image: linear-gradient(to right, white 0%, transparent 100%);
+    border-image-slice: 1;
+    padding-right: 3%;
+    padding-left: 15%;
+}
+.CourseCatalogDivisionContentCellLogo{
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    height: min(9.89583vw, 17.59259vh);
+    width: min(9.89583vw, 17.59259vh);
+    left: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.05208vw solid white;
+    border-radius: min(0.41667vw, 0.74074vh);
+
+}
+.CourseCatalogDivisionContentCell:nth-child(2) > .CourseCatalogDivisionContentCellLogo{
+    left: 7%;
+}
+.CourseCatalogDivisionContentCellLogoPhoto{
+    object-fit: contain;
+    object-position: center center;
+    width: min(9.89583vw, 17.59259vh);
+    overflow: visible;
+}
+.CourseCatalogDivisionNavigationButton{
+    position: relative;
+    border: 0.05208vw solid white;
+    width: 10.67708vw;
+    display: flex;
+    font-size: min(1.35417vw, 2.40741vh);
+    justify-content: center;
+    align-items: center;
+    height: 4.62963vh;
+    margin-left: 66.35417vw;
+    margin-top: 3.51852vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+}
+.CourseCatalogDivisionNavigationButtonNav,
+.CourseCatalogDivisionNavigationButtonNumber,
+.CourseCatalogDivisionNavigationButtonChousePage,
+.CourseCatalogDivisionNavigationButtonBack,
+.CourseCatalogDivisionNavigationButtonCategoryBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #323232;
+    background-color: rgba(229, 229, 229, 0.5);
+    transition: opacity 0.3s ease-in-out;
+}
+.CourseCatalogDivisionNavigationButtonNumber{
+    color: white;
+    text-transform: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.CourseCatalogDivisionNavigationButtonChousePage{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.CourseCatalogDivisionNavigationButtonCategoryBack{
+    color: white;
+    text-transform: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color .3s ease-in-out;
+}
+.CourseCatalogDivisionNavigationButtonCategoryBack:hover{
+    background-color: rgba(229, 229, 229, 0.5);
+}

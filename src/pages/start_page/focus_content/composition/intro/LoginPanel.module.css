@@ -1,0 +1,48 @@
+.wrapepr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 17vw;
+    padding-right: 2vw;
+    margin-left: 2vw;
+}
+
+.avatart {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 2px solid #009aad;
+    margin-right: 1vw;
+    opacity: 1;
+    transition: border 1s ease-in-out, width 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.enter_link {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    text-align: right;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.enter_link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.7s ease;
+}
+
+.enter_link:hover:before {
+    width: 100% !important;
+}

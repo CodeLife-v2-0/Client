@@ -1,0 +1,114 @@
+.main__Lessons{
+    width: 45.78125vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: min(0.05208vw, 0.09259vh) solid #009aad;
+    border-radius: min(0.52083vw, 0.92593vh);
+    overflow: hidden;
+}
+
+.main__Header__Block__Lessons{
+    display: flex;
+    width:100%;
+    height: 5.74074vh;
+}
+.lsnMtPrjCr__Title{
+    --extend__width: 0%;
+    position: relative;
+    --br: min(0.52083vw, 0.92593vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    font-size: min(1.30208vw, 2.31481vh);
+    color: white;
+    font-weight: 600;
+    user-select: none;
+    border-left: min(0.05208vw, 0.09259vh) solid #009aad;
+}
+.lsnMtPrjCr__Title::after{
+    opacity: var(--opacity);
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 0.09259vh;
+    bottom: 0.3vh;
+    left: 0;
+    background: linear-gradient(to right, transparent, white, transparent);
+    transition: background-size 0.3s ease;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: var(--extend__width);
+}
+.lsnMtPrCr__Title:first-of-type{
+    border-radius: var(--br) 0 0 0;
+}
+.lsnMtPrCr__Title:last-of-type{
+    border-radius: 0 var(--br) 0 0;
+}
+
+.main__Content__Block__Lessons{
+    width:100%;
+    height: 49.81481vh;
+}
+.main__Content__Block__Lesson__Wrapper{
+    color: white;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+.main__Content__Block__One__Lesson{
+    display: flex;
+    margin-bottom: 4vh;
+}
+.main__Content__Block__One__Lesson__Img{
+    position: relative;
+    width: 30%;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 2vw;
+}
+.main__Content__Block__One__Lesson__Img__Play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12%;
+    height: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    transition: opacity .3s ease-in-out;
+}
+.main__Content__Block__One__Lesson__Img__Play:hover{
+    opacity: 1;
+}
+.main__Content__Block__One__Lesson__Img__Play > img{
+    width: 100%;
+    height: 100%;
+}
+.main__Content__Block__One__Lesson__Img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.main__Content__Block__One__Lesson__Text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.main__Content__Block__One__Lesson__Text__Header{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main__Content__Block__One__Lesson__Text__PreHeader{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main__Content__Block__One__Lesson__Text__Description{
+    font-size: 15px;
+}

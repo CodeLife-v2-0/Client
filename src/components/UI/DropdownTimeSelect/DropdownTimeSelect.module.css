@@ -1,0 +1,86 @@
+.wrapper {
+    width: 15.72917vw;
+    min-height: 5.55556vh;
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+    font-size: min(1.30208vw, 2.31481vh);
+}
+
+
+
+.prewie {
+    width: 15.72917vw;
+    height: 5.55556vh;
+    border: #009aad solid min(0.05208vw, 0.09259vh);
+    border-radius: min(0.52083vw, 0.92593vh);
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #012C31;
+    cursor: pointer;
+}
+
+.prewie>input {
+    width: min(3.02083vw, 5.37037vh);
+    height: min(1.5625vw, 2.77778vh);
+    border-radius: min(0.26042vw, 0.46296vh);
+    border: #009aad solid min(0.05208vw, 0.09259vh);
+    text-align: center;
+    background-color: transparent;
+}
+
+.prewie>input:focus {
+    outline: none;
+}
+
+.prewie>input::placeholder {
+    color: #333333;
+}
+
+.prewie>p {
+    margin-left: min(0.78125vw, 1.38889vh);
+    min-width: min(4.89583vw, 8.7037vh);
+    text-align: left;
+}
+
+.pointer {
+    position: absolute;
+    right: 1.19792vw;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+    object-fit: contain;
+    overflow: visible;
+    width: 0.83333vw;
+}
+
+.dropdownMenu {
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #012C31;
+    border: min(0.05208vw, 0.09259vh) solid #009AAD;
+    list-style: none;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    border-radius: 0 0 min(0.52083vw, 0.92593vh) min(0.52083vw, 0.92593vh);
+}
+
+.dropdownMenuItem {
+    height: 5.55556vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    font-size: min(1.30208vw, 2.31481vh);
+    font-weight: 600;
+}
+
+.dropdownMenuItem:not(:last-of-type) {
+    border-bottom: #009aad solid 0.09259vh;
+}

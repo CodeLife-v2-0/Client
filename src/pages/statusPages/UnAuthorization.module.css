@@ -1,0 +1,128 @@
+.main_wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: comfortaa, Arial, Helvetica, sans-serif;
+}
+
+.main_wrapper span{
+    width: 80%;
+}
+
+.wrapper{
+    width: 50%;
+    height: 40%;
+    padding: 1.5% 0 1.5%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #009aad;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 1.1em;
+}
+
+.buttons_block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main_wrapper button {
+    width: 40%;
+    height: 3em;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(125, 230, 189);
+    color: darkslategray;
+    font-size: min(1.6vw, 2.4vh);
+    box-shadow: inset 0 0 0px 0px #014126, 0 0 0px 0px #014126;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.main_wrapper button:hover {
+    box-shadow: inset 0 0 10px 3px #009657, 0 0 10px 3px #009657;
+}
+
+.title_start{
+    text-align: center;
+    font-size: min(2vw, 3vh);
+}
+
+.title_end{
+    text-align: left;
+    font-size: min(1.6vw, 2.4vh);
+}
+
+.mail{
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.message{
+    font-size: min(1.6vw, 2.4vh);
+}
+
+.mail_message{
+    margin: 3vh 0 3vh;
+    text-align: justify;
+}
+
+@media(max-width: 1224px){
+    .wrapper{
+        width: 70%;
+    }
+}
+
+@media(max-width: 800px){
+    .wrapper{
+        width: 90%;
+        height: 50%;
+    }
+    .title_start{
+        font-size: min(3vw, 5vh);
+    }
+    
+    .title_end{
+        font-size: min(2.6vw, 4.4vh);
+    }
+    
+    .message{
+        font-size: min(2.6vw, 4.4vh);
+    }
+    .main_wrapper button {
+        font-size: min(2.6vw, 4.4vh);
+    }
+}
+
+@media(max-width: 450px){
+    .title_start{
+        font-size: min(4.2vw, 6vh);
+        font-weight: 700;
+    }
+    
+    .title_end{
+        font-size: min(3.6vw, 5.4vh);
+        text-align: center;
+    }
+    
+    .message{
+        font-size: min(3.4vw, 5.4vh);
+    }
+    .main_wrapper button {
+        font-size: min(3.6vw, 5.4vh);
+        height: 3.5em;
+    }
+}
+
+.main_wrapper button.disabledButton{
+    background-color: #5e67e6;
+    box-shadow: none;
+    font-size: 0.8em;
+}

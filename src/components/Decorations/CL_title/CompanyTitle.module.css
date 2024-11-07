@@ -1,0 +1,23 @@
+.company_title {
+    font-size: calc(1.4 * 3vw);
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.additionaalText{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: inline;
+}
+
+.company_title_wrapper{
+    display: flex;
+}
+
+@media (max-width: 600px){
+    .company_title{
+        font-size: calc(1.4 * 6vw);
+    }
+}

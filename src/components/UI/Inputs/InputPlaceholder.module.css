@@ -1,0 +1,34 @@
+.input_container {
+    position: relative;
+    border-radius: inherit;
+}
+
+.input_container input {
+    padding: 0.8em 0.45em 0.45em 1em;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: none;
+}
+
+.input_container input:focus {
+    outline: none;
+}
+
+.input_container label {
+    position: absolute;
+    top: 30%;
+    left: 1em;
+    pointer-events: none;
+    transition: 0.35s ease all;
+    color: #999;
+}
+
+
+
+.input_container label.active {
+    top: 0.3em;
+    left: 2.5em;
+    font-size: min(10px, 0.65vw);
+    color: rgb(151, 151, 151); 
+}

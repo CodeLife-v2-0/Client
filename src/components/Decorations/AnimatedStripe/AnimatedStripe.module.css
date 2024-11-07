@@ -1,0 +1,32 @@
+.stripe_container {
+    position: absolute;
+    top: 0vh;
+    width: 100vw;
+    height: 10vh;
+    background-color: #009aad;
+}
+
+.stripe_animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.stripe {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: #000;
+    animation: stripe-animation 2s infinite linear;
+}
+
+@keyframes stripe-animation {
+    from {
+        left: -20%;
+    }
+
+    to {
+        left: 100%;
+    }
+}

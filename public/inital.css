@@ -1,0 +1,440 @@
+:root {
+    --user_full_name_mb: 1vh;
+    --header_height: 7.68519vh;
+
+    --nav_width: 14vw;
+    --nav_menu_point_font_size: min(1.8vh, 1vw);
+    --nav_name_font_size: min(2vh, 1.2vw);
+    --nav_menu_pont_mb: min(0.9vh, 0.5vw);
+    --nav_menu_line_height: 5vh;
+
+    --additional_color: white;
+    --main_color: #009aad;
+    --background_menu_color: black;
+
+    --font_size_nav_multi: 1;
+
+    --IC_logo_width: 3.5vw;
+    --IC_logo_ml: 2vw;
+    --IC_logo_height: 4.5vh;
+    --IC_logo_font_size: min(3vh, 3vw);
+    --IC_logo_border_radius: min(2vh, 1vw);
+    --IC_logo_border_width: max(1px, 0.2vw);
+
+    --IC_logo_title_font_size: min(3vh, 3vw);
+    --IC_logo_title_ml: 1.5vw;
+
+    --header_right_content_gap: max(5%, 2vw);
+    --header_right_content_mr: 2.5vw;
+    --header_right_content_font_size: min(2vh, 3vw);
+
+    --all_content_magrin_right: 13vw;
+    --all_content_magrin_left: 6vw;
+    --all_content_magrin_top: 9vh;
+    --all_content_magrin_bottom: 9vh;
+    --Company_title_width: 35vw;
+    --Company_title_height: 26vh;
+    --Company_logo_width: 15vw;
+    --Company_logo_height: 9vw;
+    --attributes_container_gap: 11vh;
+    --authorization_form_width: 39vw;
+    --authorization_form_title_height: 13%;
+    --authorization_form_footer_height: 13%;
+
+    --font1px: min(0.266667vw, calc(var(--vh, 1vh) * 0.149925));
+    --font2px: min(0.533333vw, calc(var(--vh, 1vh) * 0.29985));
+    --font3px: min(0.8vw, calc(var(--vh, 1vh) * 0.449775));
+    --font4px: min(1.066667vw, calc(var(--vh, 1vh) * 0.5997));
+    --font5px: min(1.333333vw, calc(var(--vh, 1vh) * 0.749625));
+    --font6px: min(1.6vw, calc(var(--vh, 1vh) * 0.89955));
+    --font7px: min(1.866667vw, calc(var(--vh, 1vh) * 1.049475));
+    --font8px: min(2.133333vw, calc(var(--vh, 1vh) * 1.1994));
+    --font9px: min(2.4vw, calc(var(--vh, 1vh) * 1.349325));
+    --font10px: min(2.666667vw, calc(var(--vh, 1vh) * 1.49925));
+    --font11px: min(2.933333vw, calc(var(--vh, 1vh) * 1.649175));
+    --font12px: min(3.2vw, calc(var(--vh, 1vh) * 1.7991));
+    --font13px: min(3.466667vw, calc(var(--vh, 1vh) * 1.949025));
+    --font14px: min(3.733333vw, calc(var(--vh, 1vh) * 2.098951));
+    --font15px: min(4vw, calc(var(--vh, 1vh) * 2.248876));
+    --font16px: min(4.266667vw, calc(var(--vh, 1vh) * 2.398801));
+    --font17px: min(4.533333vw, calc(var(--vh, 1vh) * 2.548726));
+    --font18px: min(4.8vw, calc(var(--vh, 1vh) * 2.698651));
+    --font19px: min(5.066667vw, calc(var(--vh, 1vh) * 2.848576));
+    --font20px: min(5.333333vw, calc(var(--vh, 1vh) * 2.998501));
+    --font21px: min(5.6vw, calc(var(--vh, 1vh) * 3.148426));
+    --font22px: min(5.866667vw, calc(var(--vh, 1vh) * 3.298351));
+    --font23px: min(6.133333vw, calc(var(--vh, 1vh) * 3.448276));
+    --font24px: min(6.4vw, calc(var(--vh, 1vh) * 3.598201));
+    --font25px: min(6.666667vw, calc(var(--vh, 1vh) * 3.748126));
+    --font26px: min(6.933333vw, calc(var(--vh, 1vh) * 3.898051));
+    --font27px: min(7.2vw, calc(var(--vh, 1vh) * 4.047976));
+    --font28px: min(7.466667vw, calc(var(--vh, 1vh) * 4.197901));
+    --font29px: min(7.733333vw, calc(var(--vh, 1vh) * 4.347826));
+    --font30px: min(8vw, calc(var(--vh, 1vh) * 4.497751));
+    --font31px: min(8.266667vw, calc(var(--vh, 1vh) * 4.647676));
+    --font32px: min(8.533333vw, calc(var(--vh, 1vh) * 4.797601));
+    --font33px: min(8.8vw, calc(var(--vh, 1vh) * 4.947526));
+    --font34px: min(9.066667vw, calc(var(--vh, 1vh) * 5.097451));
+    --font35px: min(9.333333vw, calc(var(--vh, 1vh) * 5.247376));
+    --font36px: min(9.6vw, calc(var(--vh, 1vh) * 5.397301));
+    --font37px: min(9.866667vw, calc(var(--vh, 1vh) * 5.547226));
+    --font38px: min(10.133333vw, calc(var(--vh, 1vh) * 5.697151));
+    --font39px: min(10.4vw, calc(var(--vh, 1vh) * 5.847076));
+    --font40px: min(10.666667vw, calc(var(--vh, 1vh) * 5.997001));
+    --font41px: min(10.933333vw, calc(var(--vh, 1vh) * 6.146927));
+    --font42px: min(11.2vw, calc(var(--vh, 1vh) * 6.296852));
+    --font43px: min(11.466667vw, calc(var(--vh, 1vh) * 6.446777));
+    --font44px: min(11.733333vw, calc(var(--vh, 1vh) * 6.596702));
+    --font45px: min(12.0vw, calc(var(--vh, 1vh) * 6.746627));
+    --mobileheigth: calc(var(--vh, 1vh) * 100);
+}
+*{
+    font-family: 'Alegreya';
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+#animatedBackground {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    background-color: #000;
+    opacity: 0;
+    display: none;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+::selection {
+    background-color: #009aad;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/fonts/AlegreyaSansSC-BlackItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bruno';
+    src: url('/FONTS/BrunoAceSC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none
+}

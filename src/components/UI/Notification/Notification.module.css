@@ -1,0 +1,66 @@
+.wrapper{
+    --mainColor: #7442c8;
+    padding: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    font-family: comfortaa, Arial, Helvetica, sans-serif;
+    font-size: min(1.5vh, 0.75vw);/*от балды поставил*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: double 2px var(--mainColor);
+    border-radius: min(1.5vh, 0.75vw);
+    background-color: black;
+    z-index: 3;
+    box-shadow: 2px 2px 4px 3px black;
+}
+
+.title{
+    align-self: self-start;
+    color:  var(--mainColor);
+    font-size: 1.25em;
+    margin-top: 0.5em;
+    position: relative;
+    text-indent: 1em;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5em; /* Расстояние между текстом и подчеркиванием */
+    left: -0.5em;
+    width: 28vw;
+    height: 1px; /* Толщина подчеркивания */
+    background: linear-gradient(to right, black 0% , var(--mainColor),  black 100%); /* Градиентное подчеркивание */
+  }
+
+.message{
+    text-indent: 1em;
+    align-self: self-start;
+    text-align: justify;
+    color: aliceblue;
+    margin: 2em 0 2em;
+}
+
+.wrapper button{
+    width: 40%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    text-align: center;
+    align-self: center;
+    color: aliceblue;
+    margin-bottom: 0.5em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.wrapper button:focus {
+    outline: none;
+}
+
+.wrapper button:hover{
+    background-color: #96c842;
+}

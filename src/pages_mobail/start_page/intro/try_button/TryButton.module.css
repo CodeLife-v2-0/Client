@@ -1,0 +1,18 @@
+.try_button {
+    background-color: #1A1B1D;
+    color: aliceblue;
+    border-radius: var(--font5px);
+    text-align: center;
+    width: 81%;
+    height: calc(var(--vh, 1vh) * 7.74);
+    margin-top: calc(var(--vh, 1vh) * 3.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var( --font17px);
+    border: none;
+}

@@ -1,0 +1,211 @@
+.wrapper {
+    height: 92vh;
+    width: 60vw;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    z-index: 5;
+}
+
+.textblock {
+    background-color: black;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: #016F12;
+    width: 100%;
+    height: 80%;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: calc(1.6 * 1.8vw);
+    padding: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: border-radius 1.5s ease-out;
+}
+
+.maintext {
+    text-align: justify;
+}
+
+.maintext:first-of-type {
+    text-indent: 3em;
+}
+
+.signature {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bottom {
+    width: 60vw;
+    height: 14.8vh;
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid rgba(0, 0, 0, 1);
+    font-size: 44px;
+    transition: border 1s ease-in-out, font-size 1s ease-in-out;
+}
+
+.bottom_left {
+    overflow: hidden;
+    width: 76%;
+    background: #000000;
+    border: 5px solid #016F12;
+    border-radius: 0px 0px 0px 70px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: 2.6vw;
+    line-height: calc(1.1 * 2.6vw);
+    transition: all 1s ease-in-out;
+}
+
+.bottom_right {
+    width: 20%;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: #016F12;
+    border-radius: 0px 0px 70px 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: calc(1.1 * 3vw);
+    transition: font-size 1s ease-in-out, width 1s ease-in-out;
+}
+
+.our__team__and__news__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+}
+
+.go__to__news {
+    color: #016F12;
+    display: flex;
+    font-size: 1.5vw;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    width: 30%;
+    &:hover{
+        .go__to__news__cirlce{
+            width: 100%;
+        }
+        .go__to__news__text{
+            color:white;
+        }
+        .go__to__news__arrow{
+            transform: translate(0.6vw, 0);
+            background: white;
+        }
+    }
+}
+
+.go__to__news__cirlce {
+    position: relative;
+    margin: 0;
+    width: 2.8vw;
+    height: 2.8vw;
+    background: #016F12;
+    border-radius: 1.4vw;
+    transition: width 0.5s ease-in-out;
+}
+
+.go__to__news__arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1.6vw;
+    height: 0.14vw;
+    background: none;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.go__to__news__arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.37vw;
+    right: 0;
+    width: 0.8vw;
+    height: 0.8vw;
+    border-top: 0.15vw solid #fff;
+    border-right: 0.15vw solid #fff;
+    transform: rotate(45deg);
+}
+
+.go__to__news__text {
+    position: absolute;
+    transition: color 0.3s ease-in-out;
+    top: 0;
+    left: 20%;
+}
+
+
+@media(max-width: 1450px) {
+    .textblock {
+        justify-content: space-between;
+        font-size: min(2.2vw, 3.4vh);
+        line-height: calc(1.6 * min(2.2vw, 3.4vh));
+        padding-top: 30px;
+    }
+
+    .bottom_right {
+        font-size: min(3vw, 4vh);
+        line-height: calc(1.1 * min(3vw, 4vh));
+    }
+
+    .bottom {
+        height: 15vh;
+    }
+}
+
+@media(max-width: 1000px) {
+    .wrapper {
+        justify-content: space-around;
+    }
+
+    .textblock {
+        font-size: min(2.6vw, 2.6vh);
+        line-height: calc(1.6 * min(2.6vw, 2.6vh));
+    }
+
+    .bottom {
+        height: 10vh;
+    }
+}
+
+@media(max-width: 750px) {
+    .textblock {
+        font-size: min(3vw, 2.4vh);
+        line-height: calc(1.6 * min(3vw, 2.4vh));
+        padding: 30px;
+    }
+}
+
+@media(max-height: 600px) {
+    .bottom {
+        height: 12vh;
+        margin-bottom: 3vh;
+    }
+
+    .bottom_left {
+        font-size: min(2.6vw, 3vh);
+        line-height: calc(1.1 * min(2.6vw, 3vh));
+    }
+}

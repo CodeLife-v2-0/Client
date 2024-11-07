@@ -1,0 +1,71 @@
+.sallaryBlock {
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 29);
+    margin-top: calc(var(--vh, 1vh) * 2.35);
+    text-indent: 0;
+    overflow: visible;
+}
+
+
+.stats_wrapper {
+    width: 100%;
+    text-indent: 0;
+}
+
+.stats_wrapper *{
+    text-indent: 0;
+}
+
+.stats_row {
+    width: 100%;
+    display: flex;
+    margin-top: calc(var(--vh, 1vh) * 4.5);
+}
+
+.stats_row > div:first-of-type{
+    margin: 0 var(--between) 0 var(--indent);
+}
+
+.label {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.83);
+    --gap: calc(var(--vh, 1vh) * 1.35);
+    height: fit-content;
+}
+
+.label_title {
+    height: 1em;
+    font-size: var(--font40px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.label_border {
+    margin-top: var(--gap);
+    font-size: var(--font14px);
+    border: 1px solid #878A92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+.label_body {
+    margin-top: var(--gap);
+    font-size: var(--font14px);
+    text-align: justify;
+}
+
+.solo_label{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    margin-top: calc(var(--vh, 1vh) * 4.5);
+    justify-content: center;
+    align-items: center;
+}

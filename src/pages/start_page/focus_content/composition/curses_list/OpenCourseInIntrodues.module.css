@@ -1,0 +1,950 @@
+.backgrond__photo {
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.open__course__visible__content,
+.open__course__description {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.open__course__intro__wrapper__active,
+.open__course__intro__wrapper__disappearance__left,
+.open__course__intro__wrapper__appearance__left,
+.open__course__intro__wrapper__unactive {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.open__course__intro__wrapper__unactive {
+    left: -100vw;
+}
+
+.open__course__intro__wrapper__disappearance__left {
+    animation-duration: 1s;
+    animation-name: intro__disappearance__left;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro__disappearance__left {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100vw;
+    }
+}
+
+.open__course__intro__wrapper__appearance__left {
+    animation-duration: 1s;
+    animation-name: intro__appearance__left;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro__appearance__left {
+    from {
+        left: -100vw;
+    }
+
+    to {
+        left: 0vw;
+    }
+}
+
+.open__course__intro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bg__photo__2,
+.bg__photo__2__disanimation {
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.bg__photo__2 {
+    animation-duration: 3s;
+    animation-name: appearance__photo;
+}
+
+@keyframes appearance__photo {
+    from {
+        left: -50%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+
+    33.3% {
+        left: -50%;
+        opacity: 0;
+    }
+}
+
+.open__course__description__wrapper__appearance__right,
+.open__course__description__wrapper__disappearance__right,
+.open__course__description__wrapper__disappearance__left,
+.open__course__description__wrapper__active,
+.open__course__description__wrapper__unactive {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+    display: flex;
+    color: rgba(183, 183, 183, 1);
+}
+
+.open__course__description__wrapper__unactive {
+    left: 200vw;
+}
+
+.open__course__description__wrapper__appearance__right {
+    animation-duration: 1s;
+    animation-name: description__appearance__right;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description__appearance__right {
+    from {
+        left: 100vw;
+    }
+
+    to {
+        left: 0vw;
+    }
+}
+
+.open__course__description__wrapper__disappearance__right {
+    animation-duration: 1s;
+    animation-name: description__disappearance__right;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description__disappearance__right {
+    from {
+        left: 0vw;
+    }
+
+    to {
+        left: 100vw;
+    }
+}
+
+.open__course__description__circle__active,
+.open__course__description__circle__unactive,
+.open__course__description__circle__left,
+.open__course__description__circle__right,
+.open__course__description__circle__appearance {
+    width: 85vw;
+    height: 85vw;
+    border-radius: 50%;
+    box-shadow: 0 0 3vw 1.5vw rgba(249, 249, 249, 0.25);
+    position: absolute;
+    background-color: rgba(14, 14, 14, 0.2);
+    top: -95vh;
+    left: 35vw;
+    z-index: -2;
+}
+
+.open__course__description__circle__left {
+    animation-name: description__circle__left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description__circle__left {
+    from {
+        left: 35vw;
+    }
+
+    to {
+        left: -25vw;
+    }
+}
+
+.open__course__description__circle__appearance {
+    animation-name: description__circle__appearance;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description__circle__appearance {
+    from {
+        left: 50vw;
+    }
+
+    to {
+        left: 35vw;
+    }
+}
+
+.open__course__description__circle__right {
+    animation-name: description__circle__right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description__circle__right {
+    from {
+        left: -25vw;
+    }
+
+    to {
+        left: 35vw;
+    }
+}
+
+.open__course__stages {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: 0vw;
+    display: flex;
+    color: rgba(183, 183, 183, 1);
+    animation-duration: 1s;
+    animation-name: appearance__stages;
+}
+
+@keyframes appearance__stages {
+    from {
+        left: 60vw;
+    }
+
+    to {
+        left: 0vw;
+    }
+}
+
+
+.open__course__stages__bg {
+    width: 85vw;
+    height: 85vw;
+    border-radius: 50%;
+    box-shadow: 0 0 3vw 1.5vw rgba(249, 249, 249, 0.25);
+    position: absolute;
+    background-color: rgba(14, 14, 14, 0.2);
+    top: -95vh;
+    left: -20vw;
+    z-index: -2;
+}
+
+.open__course__description__logo__photo__appearance,
+.open__course__description__logo__photo__left,
+.open__course__description__logo__photo__right {
+    position: absolute;
+    top: 85vh;
+    left: 13vw;
+    width: 50vw;
+    z-index: -1;
+    filter: brightness(80%);
+    opacity: 1;
+}
+
+.open__course__description__logo__photo__appearance {
+    animation-duration: 2s;
+    animation-name: description__logo__photo__appearance;
+}
+
+@keyframes description__logo__photo__appearance {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.open__course__description__logo__photo__right {
+    animation-duration: 1s;
+    animation-name: appearance__descritpion__photo__right;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appearance__descritpion__photo__right {
+    to {
+        left: 27vw;
+    }
+}
+
+.open__course__description__logo__photo__left {
+    left: 27vw;
+    animation-duration: 1s;
+    animation-name: appearance__descritpion__photo__left;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appearance__descritpion__photo__left {
+    to {
+        left: 13vw;
+    }
+}
+
+.open__course__stages__bg__photo {
+    position: absolute;
+    top: 85vh;
+    left: 27vw;
+    width: 50vw;
+    z-index: -1;
+    filter: brightness(80%);
+}
+
+.open__course__intro__main__content {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 20vh;
+}
+
+.go__on__main {
+    color: white;
+}
+
+.open__course__intro__title,
+.open__course__intro__title__disanimation {
+    position: absolute;
+    width: 24vw;
+    height: 10vh;
+    top: 6vh;
+    left: 72vw;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(4vw, 8vh);
+    color: rgba(183, 183, 183, 1);
+}
+
+.open__course__intro__title {
+    animation-duration: 5s;
+    animation-name: appearance__title;
+}
+
+@keyframes appearance__title {
+    from {
+        display: flex;
+        top: 45vh;
+        left: 38vw;
+        opacity: 0;
+    }
+
+    to {
+        top: 6vh;
+        left: 72vw;
+        opacity: 1;
+        display: none;
+    }
+
+    20% {
+        display: flex;
+        top: 45vh;
+        left: 38vw;
+        opacity: 1;
+    }
+
+    60% {
+        display: flex;
+        top: 45vh;
+        left: 72vw;
+        opacity: 1;
+    }
+}
+
+.open__course__intro__table,
+.open__course__intro__table__disanimation {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 10vh;
+    height: 25vh;
+    box-shadow: 0px 0px 3.5vw 0.5vw rgba(183, 183, 183, 1);
+    display: flex;
+}
+
+.open__course__intro__table {
+    animation-duration: 8s;
+    animation-name: appearance__table;
+}
+
+@keyframes appearance__table {
+    from {
+        opacity: 0;
+        box-shadow: none;
+    }
+
+    to {
+        opacity: 1;
+        box-shadow: 0px 0px 3.5vw 0.5vw rgba(183, 183, 183, 1);
+    }
+
+    37.5% {
+        opacity: 0;
+        box-shadow: none;
+    }
+
+    62.5% {
+        opacity: 1;
+        box-shadow: none;
+    }
+}
+
+.open__course__table__cell {
+    width: 25%;
+    height: 100%;
+    color: white;
+    border: 1px solid rgba(183, 183, 183, 0.7);
+}
+
+.open__course__table__cell__text {
+    color: rgba(183, 183, 183, 0.7);
+    text-align: center;
+    font-size: min(1.4vw, 2.8vh);
+    width: 90%;
+    margin-left: 5%;
+    height: 60%;
+}
+
+.open__course__table__cell__title,
+.open__course__table__cell__title__disanimation {
+    opacity: 0;
+    font-size: min(2.5vw, 5vh);
+    line-height: 1.7em;
+    margin-top: 0.3em;
+    text-align: center;
+}
+
+.open__course__table__cell__title__disanimation {
+    opacity: 1;
+}
+
+.open__course__intro__description,
+.open__course__intro__description__disanimetion {
+    width: 100%;
+    margin-top: 7vh;
+    height: 35vh;
+    border-image: linear-gradient(to bottom, rgba(222, 222, 222, 1), rgba(139, 139, 139, 1) 50%, rgba(139, 139, 139, 0) 100%) 0 1 0 0 / 0 0.1vw 0 0;
+}
+
+.open__course__intro__description {
+    animation-duration: 10s;
+    animation-name: appearance__intro__info;
+}
+
+@keyframes appearance__intro__info {
+    from {
+        height: 0vh;
+    }
+
+    to {
+        height: 35vh;
+    }
+
+    90% {
+        height: 0vh;
+    }
+}
+
+.open__course__intro__description__text,
+.open__course__intro__description__text__disanimation {
+    color: rgba(183, 183, 183, 1);
+    font-size: min(1.9vw, 3.8vh);
+    line-height: 1.2em;
+    width: 87%;
+    text-align: end;
+    margin-left: 10%;
+    opacity: 1;
+}
+
+.open__course__intro__description__text {
+    animation-duration: 10.6s;
+    animation-name: appearance__intro__text;
+}
+
+@keyframes appearance__intro__text {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+}
+
+.open__course__description__main__content__wrapper__disappearance__left,
+.open__course__description__main__content__wrapper__appearance__left,
+.open__course__description__main__content__wrapper__unactive,
+.open__course__description__main__content__wrapper__active {
+    position: absolute;
+    width: 30vw;
+    left: 2vw;
+    top: 7vh;
+    height: 80vh;
+    color: rgba(183, 183, 183, 1);
+}
+
+.open__course__description__main__content__wrapper__unactive {
+    left: -110vh;
+}
+
+.open__course__description__main__content__wrapper__disappearance__left {
+    animation-name: description__main__content__wrapper__disappearance_left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description__main__content__wrapper__disappearance_left {
+    from {
+        left: 2vh;
+    }
+
+    to {
+        left: -110vh;
+    }
+}
+
+.open__course__description__main__content__wrapper__appearance__left {
+    animation-name: description__main__content__wrapper__appearance_left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description__main__content__wrapper__appearance_left {
+    from {
+        left: -110vh;
+    }
+
+    to {
+        left: 2vh;
+    }
+}
+
+.open__course__description__main__content__border__appearance,
+.open__course__description__main__content__border__disamination {
+    margin-top: 3vh;
+    height: 80vh;
+    border-image: linear-gradient(to bottom, rgba(150, 150, 150, 1), rgba(139, 139, 139, 1) 50%, rgba(139, 139, 139, 0) 100%) 0 0 0 1 / 0 0 0 0.1vw;
+}
+
+.open__course__description__main__content__border__appearance {
+    animation-duration: 3s;
+    animation-name: appearance__description__main__content__border;
+}
+
+@keyframes appearance__description__main__content__border {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 80vh;
+    }
+
+    66.7% {
+        height: 0;
+    }
+}
+
+
+.open__course__description__main__content__title__appearance,
+.open__course__description__main__content__title__disamination {
+    font-size: min(3vw, 6vh);
+}
+
+.open__course__description__main__content__title__appearance {
+    animation-duration: 3s;
+    animation-name: appearance__description__main__content__title;
+}
+
+@keyframes appearance__description__main__content__title {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    66.7% {
+        opacity: 0;
+    }
+}
+
+.open__course__description__main__content__text__appearance,
+.open__course__description__main__content__text__disamination {
+    font-size: min(1.5vw, 3vh);
+    line-height: 1.3em;
+    text-align: justify;
+    margin-left: 1em;
+}
+
+.open__course__description__main__content__text__appearance {
+    animation-duration: 4s;
+    animation-name: appearance__description__text;
+}
+
+@keyframes appearance__description__text {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+}
+
+.open__course__description__main__content__buttons__appearance,
+.open__course__description__main__content__buttons__disanimation {
+    position: absolute;
+    top: 87vh;
+    width: 92vw;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    display: flex;
+    font-size: min(1.5vw, 3vh);
+    line-height: 1.3em;
+    color: rgba(183, 183, 183, 1);
+    justify-content: space-between;
+}
+
+.open__course__description__main__content__buttons__disanimation {
+    top: 120vh;
+}
+
+.open__course__description__main__content__buttons__appearance {
+    animation-name: appearance__description__main__content__buttons;
+    animation-duration: 4s;
+}
+
+@keyframes appearance__description__main__content__buttons {
+    from {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.open__course__stages__info__border,
+.open__course__stages__info__border__disanimation {
+    position: absolute;
+    top: 12%;
+    height: 73vh;
+    width: 100%;
+    border-image: linear-gradient(to bottom, rgba(150, 150, 150, 1), rgba(139, 139, 139, 1) 50%, rgba(139, 139, 139, 0) 100%) 0 1 0 0 / 0 0.1vw 0 0;
+}
+
+.open__course__stages__info__border {
+    animation-duration: 2s;
+    animation-name: appearance__stages__info__border;
+}
+
+@keyframes appearance__stages__info__border {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 73vh;
+    }
+
+    50% {
+        height: 0;
+    }
+}
+
+.open__course__stages__info__wrapper__appearance__right,
+.open__course__stages__info__wrapper__disappearance__right,
+.open__course__stages__info__wrapper__active,
+.open__course__stages__info__wrapper__unactive {
+    position: absolute;
+    left: 65vw;
+    top: 7vh;
+    width: 30vw;
+    height: 80vh;
+}
+
+.open__course__stages__info__wrapper__appearance__right {
+    animation-name: stages__info__wrapper__appearance__right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stages__info__wrapper__appearance__right {
+    from {
+        left: 165vw;
+    }
+
+    to {
+        left: 65vw;
+    }
+}
+
+.open__course__stages__info__wrapper__disappearance__right {
+    animation-name: stages__info__wrapper__disappearance__right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stages__info__wrapper__disappearance__right {
+    from {
+        left: 65vw;
+    }
+
+    to {
+        left: 165vw;
+    }
+}
+
+.open__course__stages__info__wrapper__unactive {
+    left: 165vw;
+}
+
+.open__course__stages__info__relative {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.open__course__stages__info__title,
+.open__course__stages__info__title__disanimation,
+.open__course__stages__info__title__appearance,
+.open__course__stages__info__title__disappearance,
+.open__course__stages__info__title__unactive {
+    position: absolute;
+    right: 0;
+    font-size: min(3vw, 6vh);
+}
+
+.open__course__stages__info__title__unactive {
+    display: none;
+}
+
+.open__course__stages__info__title {
+    animation-duration: 2s;
+    animation-name: appearance__stages__info__title;
+}
+
+@keyframes appearance__stages__info__title {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.open__course__stages__info__title__appearance {
+    animation-name: stages__info__title__appearance;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stages__info__title__appearance {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.open__course__stages__info__title__disappearance {
+    animation-name: stages__info__title__disappearance;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stages__info__title__disappearance {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.open__course__stages__info__text,
+.open__course__stages__info__text__disanimation,
+.open__course__stages__info__text__appearance,
+.open__course__stages__info__text__disappearance,
+.open__course__stages__info__text__unactive {
+    position: absolute;
+    top: 12%;
+    font-size: min(1.5vw, 3vh);
+    line-height: 1.3em;
+    text-align: justify;
+    margin-right: 1em;
+    pointer-events: all;
+}
+
+.open__course__stages__info__text__unactive {
+    display: none;
+}
+
+.open__course__stages__info__text__appearance {
+    animation-name: stages__info__text__appearance;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stages__info__text__appearance {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.open__course__stages__info__text__disappearance {
+    animation-name: stages__info__text__disappearance;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stages__info__text__disappearance {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.open__course__stages__info__text {
+    animation-duration: 3s;
+    animation-name: appearance__description__main__content__title;
+}
+
+.open__course__stages__info__text__part {
+    margin-top: 1em;
+    line-height: 1.4em;
+}
+
+.open__course__stages__info__text__part:first-of-type {
+    margin-top: 0em;
+}
+
+.open__course__stages__info__text__part__title {
+    font-weight: 700;
+    animation-name: info__text__part__title;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes info__text__part__title {
+    from{
+        text-shadow: #fff 0 0 0;
+    }
+    to{
+        text-shadow: #fff 0 0 0;
+    }
+    50%{
+        text-shadow: #fff 0 0 0.15vw;
+    }
+}
+
+.open__course__stages__info__text__one__point {
+    margin-top: 2em;
+}
+
+.open__course__stages__info__text__one__point:first-of-type {
+    margin-top: 0em;
+}
+
+.open__course__stages__info__text__one__point__title {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.open__course__stages__info__text__one__point__text {
+    text-indent: 1em;
+}
+
+.open__course__stages__info__buttons,
+.open__course__stages__info__buttons__disamination {
+    position: absolute;
+    top: 82vh;
+    left: -65vw;
+    width: 92vw;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    display: flex;
+    font-size: min(1.5vw, 3vh);
+    line-height: 1.3em;
+    color: rgba(183, 183, 183, 1);
+    justify-content: space-between;
+}
+
+.open__course__stages__info__buttons__disamination {
+    top: 120vh;
+}
+
+.open__course__stages__info__buttons {
+    animation-name: appearance__description__main__content__buttons;
+    animation-duration: 4s;
+}
+
+@keyframes appearance__description__main__content__buttons {
+    from {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}

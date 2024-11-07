@@ -1,0 +1,205 @@
+.wrapper {
+    width: 100vw;
+    background-color: rgba(174, 170, 166);
+}
+
+.transleteBackground {
+    height: calc(var(--vh, 1vh) * 23);
+    margin-top: calc(var(--vh, 1vh) * -3);
+    background-image: radial-gradient(1000% 88.7% at 50.13% 11.3%, #000000 0%,#000000 8%, #AEAAA6 100%);
+}
+
+.content {
+    width: 100vw;
+    height: var(--mobileheigth) * 1.5;
+}
+
+.finder_block {
+    display: flex;
+    align-items: center;
+    height: calc(var(--vh, 1vh) * 7.346);
+    margin-top: calc(var(--vh, 1vh) * 2.4);
+}
+
+.CLogo {
+    height: 100%;
+    width: 16vw;
+    margin-left: 1.867vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font30px);
+    color: #1E9BFF;
+    background: radial-gradient(150% 150% at 50% 50%, #000000 0%, rgba(0, 154, 173, 1) 100%);
+    border-radius: var(--font10px);
+}
+
+.finder {
+    position: relative;
+    height: calc(var(--vh, 1vh) * 4.95);
+    width: 77.34vw;
+    margin-left: 3vw;
+}
+
+.finder_lens {
+    position: absolute;
+    height: 55%;
+    margin: 2.5% 0 2.5% 2.5%;
+}
+
+.finder_input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    padding-left: 5%;
+    background: #D9D9D9;
+    border-radius: var(--font9px); /*9px*/
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font16px); /*16px*/
+    line-height: var(--font18px); /*18px*/
+    color: #1A1B1D;
+}
+
+.finder_input:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: calc(var(--vh, 1vh) * 3.2);
+    margin-left: 1vw;
+    width: 98vw;
+    height: calc(var(--vh, 1vh) * 4.348);
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font14px); /*14px*/
+    color: #1A1B1D;
+    border-radius: var(--font8px); /*8px*/
+    transition: background-color 0.5s ease-in-out;
+}
+
+.courses{
+    width: 100vw;
+    padding-left: 1.066vw;
+    padding-right: 1.066vw;
+}
+
+.row:first-child{
+    margin-top: calc(var(--vh, 1vh) * 2.549);
+}
+
+.row, .last_row{
+    margin-top: calc(var(--vh, 1vh) * 1.65);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.last_row{
+    justify-content: space-around;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1.066vw 0 1.066vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: var(--font20px); /*20px*/
+}
+
+.pageNumberWrapper{
+    display: flex;
+    align-items: center;
+    background: none;
+    width: 46.93vw;
+    height: 6.747vh;
+}
+
+.pageNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    width: 46.93vw;
+    height: 100%;
+    font-size: var(--font18px); /*18px*/
+    background: linear-gradient(187.94deg, #272B2E 32.28%, #080809 89.11%);
+    color: #fff;
+}
+.pageSoloStart{
+    border-radius: var(--font10px) 0px 0px var(--font10px);
+}
+.pageSoloEnd{
+    border-radius: 0px var(--font10px) var(--font10px) 0px;
+}
+
+.pageNumber.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.arrow1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(24.09deg, #49494B -12.59%, #878A92 65.72%);
+    height: 100%;   
+    width: 18vw;
+    border-radius: 0px var(--font10px) var(--font10px) 0px;
+}
+
+.arrow2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(24.09deg, #49494B -12.59%, #878A92 65.72%);
+    height: 100%;   
+    width: 18vw;
+    border-radius: var(--font10px) 0px 0px var(--font10px);
+}
+
+.line {
+    width: 4vw;
+    height: calc(var(--vh, 1vh) * 0.3);
+    background-color: #fff;
+    margin-top: calc(var(--vh, 1vh) * 2);
+    transition: transform 0.3s ease;
+    border-radius: var(--font2px);
+}
+
+.line_one {
+    transform: rotate(25deg) translateY(-3vw);
+}
+
+.line_two {
+    transform: rotate(-25deg) translateX(-2vw) translateY(-2.2vw);
+}
+
+.line_three {
+    transform: rotate(25deg) translateX(2vw) translateY(-2.2vw);
+}
+
+.line_four {
+    transform: rotate(-25deg) translateX(0vw) translateY(-3vw);
+}

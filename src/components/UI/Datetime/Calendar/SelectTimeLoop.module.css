@@ -1,0 +1,63 @@
+.SelectTimeLoopWrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 50, 51, 1);
+    padding: 3%;
+    font-size: 1.3vw;
+    color: white;
+    position: relative;
+}
+.SelectTimeLoopText{
+    text-align: justify;
+    height: 50%;
+}
+.SelectTimeLoopButtons{
+    height: 50%;
+    width: 100%;
+}
+.SelectTimeLoopButtonsRow{
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+.SelectTimeLoopButtonsCell, .SelectTimeLoopButtonsCellInput{
+    border: 1px solid white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    &:hover{
+        background-color: rgba(11, 145, 255, 0.5);
+    }
+}
+.SelectTimeLoopButtonsCellInputContent{
+    display: flex;
+    justify-content: space-around;
+}
+.SelectTimeLoopButtonsCellInput{
+    flex-direction: column;
+    font-size: 1.1vw;
+}
+.SelectTimeLoopButtonsCellInputValue{
+    color: black;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    &:focus{
+        outline: none;
+    }
+}
+.SelectTimeLoopButtonsCellInputContentButton{
+    border: 1px solid white;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+    &:hover{
+        background-color: green;
+    }
+}

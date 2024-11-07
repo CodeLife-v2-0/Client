@@ -1,0 +1,78 @@
+.wrapper {
+    display: flex;
+    --numberAreaWidth: 22.667%;
+    --histogrammHeight: 84.54%;
+    font-weight: 400;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    margin-bottom: calc(var(--vh, 1vh) * 2);
+}
+
+.scale_block {
+    width: var(--numberAreaWidth);
+    height: var(--histogrammHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.scale_block>div {
+    position: relative;
+    height: calc(100% / 6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.75em;
+    color: #FFFFFF;
+}
+
+.scale_block>div>div {
+    position: absolute;
+    content: " ";
+    width: 6%;
+    height: 1px;
+    right: -3%;
+    top: calc(50% - 0.5px);
+    background-color: #E4E4E4;
+    border-radius: 2px;
+}
+
+.main_panel {
+    width: 72.5%;
+    --signatureGap: 6.7%;
+}
+
+.histogramm {
+    height: var(--histogrammHeight);
+
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.skale {
+    background: linear-gradient(180deg, #000000 0%, #262A2E 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+
+.skale > div{
+    margin-top: -1.3em;
+}
+
+.statsSignature {
+    margin-top: var(--signatureGap);
+    height: calc(100% - var(--histogrammHeight) - var(--signatureGap));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font16px);
+    text-align: center;
+    color: #E4E4E4;
+}
+

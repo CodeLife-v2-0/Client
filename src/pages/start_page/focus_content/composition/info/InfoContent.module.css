@@ -1,0 +1,22 @@
+.main__wrapper{
+    width: 64vw;
+    height: 70vh;
+}
+.wrapper {
+    width: 64vw;
+    height: 70vh;
+    border: 4px solid #009AAC;
+    border-radius: 50px;
+    margin-top: 27vh;
+    margin-left: calc(-8vw - 8vw/10);
+    background-color: black;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+@media(max-width: 600px){
+    .wrapper {
+        width: 90vw;
+        margin-left: -2.5vw;
+    }
+}
+

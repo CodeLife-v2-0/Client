@@ -1,0 +1,32 @@
+.check_mark {
+    width: 1.5em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    text-align: left;
+    width: 90%;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(2.5vw, 4vh);
+    line-height: calc(1.4 * min(2.5vw, 4vh));
+    color: #FFFFFF;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.special {
+    border-bottom: 2px solid #009aad;
+    margin-left: 1.3em;
+}
+
+@media(max-width: 600px){
+    .wrapper{
+        font-size: min(4vw, 3vh);
+        line-height: calc(1.4 * min(4vw, 3vh));
+    }
+}

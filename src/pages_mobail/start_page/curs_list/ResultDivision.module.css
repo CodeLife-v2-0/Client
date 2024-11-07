@@ -1,0 +1,98 @@
+.wrapper {
+    width: 100vw;
+    text-indent: 0;
+}
+
+.content_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: calc(var(--vh, 1vh) * 8.55);
+    background-image: radial-gradient(100.55% 100.00% at 66.18% 100.00%, rgba(39, 39, 39, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%);
+    color: #FFF;
+    text-align: justify;
+    font-size: 26px;
+    font-family: Comfortaa;
+}
+
+.tiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainTileWrapper {
+    width: 90vw;
+    height: calc(var(--vh, 1vh) * 34);
+    margin-top: calc(var(--vh, 1vh) * 2.25);
+    background-color: rgba(0, 0, 0, 0.20);
+    box-shadow: 10px 4px 10px 0px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerTileWrapper {
+    width: 92%;
+    height: 87.5%;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0.20);
+    display: flex;
+    align-items: center;
+}
+
+.leftTile {
+    width: 55%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleTile {
+    width: 96%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-size: var(--font10px);
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(135deg, rgba(51, 51, 51, 0.80) 0%, rgba(73, 73, 75, 0.80) 100%);
+}
+
+.bodyTile {
+    width: 94%;
+    height: 70%;
+    color: #FFF;
+    text-align: center;
+    font-size: var(--font11px);
+    font-family: Inter;
+    line-height: 175.023%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightTile {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.rightTile>img {
+    width: 94%;
+    height: 95%;
+}

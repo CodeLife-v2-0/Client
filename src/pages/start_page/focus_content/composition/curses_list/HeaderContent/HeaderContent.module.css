@@ -1,0 +1,17 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vw 0 2vw;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8vw;
+    line-height: calc(1.2 * 3.8vw);
+    text-align: center;
+    color: #000000;
+}

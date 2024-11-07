@@ -1,0 +1,6 @@
+.BeautifulBackground{
+    width: 100vw;
+    height: var(--mobileheigth);
+    background: black;
+    position: absolute;
+}

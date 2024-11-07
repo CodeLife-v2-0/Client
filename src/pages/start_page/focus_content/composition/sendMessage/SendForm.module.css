@@ -1,0 +1,147 @@
+.send__form__wrapper{
+    position: absolute;
+    top: calc(100vh * 5.2);
+    left: 0;
+    font-family: 'Comfortaa';
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(130, 130, 130, 1) 0%, rgba(10, 10, 10, 1) 100%);
+}
+.send__modal__wrapper{
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 250vh;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.send__modal{
+    height: 40vh;
+    width: 50vw;
+    position: relative;
+    top: 15vh;
+    background-color: white;
+    border-radius: 1vw;
+    z-index: 6;
+    font-family: 'Comfortaa';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 2vw;
+    font-weight: 700;
+}
+.send__modal__text{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5em;
+    line-height: 1.5em;
+}
+.send__modal__button{
+    border-radius: 2vw;
+    color: white;
+    height: 20%;
+    background-color: #009aad;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out;
+}
+.send__modal__button:hover{
+    background-color: #06ea5edf; 
+}
+.form__for__send__input{
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    margin-left: 1em;
+    width: 15vw;
+}
+.form__for__send__body__date > input{
+    width: 10vw;
+}
+.form__for__send{
+    width: 60%;
+    height: 48%;
+}
+.form__for__send__title{
+    font-size: 3vw;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.form__for__send__body{
+    font-size: 1.5vw;
+}
+.form__for__send__body > div{
+    margin-bottom: 2em;
+}
+.send__form__button{
+    width: 20%;
+    background-color: #009aad;
+    color: white;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vw;
+    font-size: 1.5vw;
+    color: white;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.send__form__button:hover{
+    background-color: #06ea5edf;
+}
+.send__form__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5vw;
+    height: 44%;
+    text-align: center;
+    font-weight: 700;
+}
+.send__form__footer__adress, .send__form__footer__number, .send__form__footer__mail{
+    width: 30%;
+    margin-top: 1.5em;
+}
+.send__form__footer__value{
+    margin-top: 2em;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+.form__for__send__body__date{
+    display: flex;
+    align-items: center;
+}
+.form__for__send__body__date__input > input{
+    width: 10vw;
+    padding-left: 1.3em;
+}
+.form__for__send__body__date__input{
+    width: 12vw;
+    display: flex;
+    position: relative;
+}
+.form__for__send__body__date__input__img{
+    width: 2vw;
+    position: absolute;
+    left: 1em;
+
+}
+.form__for__send__body__date__input__img__current{
+    width: 1.5vw;
+    height: 1.5vw;
+}

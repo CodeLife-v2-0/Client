@@ -1,0 +1,200 @@
+.wrapper {
+    border: #191c1d 1px solid;
+    border-top: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.leftInnerWrapper {
+    width: 60%;
+    height: 100%;
+}
+
+.rightInnerWrapper {
+    width: 40%;
+    height: 100%;
+    background-color: #303233;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+}
+
+.title {
+    height: 24%;
+    width: 100%;
+    border-bottom: 1px solid #303233;
+    display: flex;
+    align-items: center;
+}
+
+.stateBlock{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: #303233 1px solid;
+}
+
+.stateBlock > div:first-of-type{
+    font-weight: 300;
+    font-size: min(3.64vw, 6.5vh);
+    margin-top: -1vh;
+}
+
+.stateBlock > div:last-of-type{
+    font-weight: 400;
+    font-size: min(1.05vw, 1.85vh);
+    margin-top: -1vh;
+}
+
+.titleText{
+    display: flex;
+    align-items: center;
+    color: #303233;
+    text-align: left;
+    height: 100%;
+    width: 80%;
+    font-weight: 400;
+    font-size: min(1.47vw, 2.6vh);
+    line-height: 160%;
+    padding-left: 1vw;
+}
+
+.letterSection {
+    height: 76%;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.letterText {
+    width: 50%; 
+    height: 100%;
+    background-color: #303233;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 170%;
+    font-size: min(0.94vw, 1.666vh);
+}
+
+.leftTitle{
+    font-weight: 400;
+    height: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(1vw, 1.8vh);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.letterText > div{
+    width: 90%;
+}
+
+.letterBlock{
+    margin-top: 0px;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+.letterText  textarea{
+    width: 100%;
+    height: 10em;
+    background-color: #1c272e;
+    color: azure;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    resize: none;
+    text-align: justify;
+}
+
+.letterMainText{
+    text-align: justify; 
+    height: 40%;
+    cursor: pointer;
+}
+
+.description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #303233;
+    line-height: 160%;
+}
+
+.description > p{
+    text-align: justify;
+    width: 90%;
+    text-indent: 1em;
+}
+
+.hintBlock{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.buttonsBlock{
+    display: flex;
+    width: 100%;
+    height: 11vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.buttonsBlock > button{
+    width: 100%;
+    border: none;
+    background-color: #1c272e;
+    border-radius: 0.5vh;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buttonsBlock > button:hover{
+    background-color: #92ccdb;
+}
+
+
+.rightInnerWrapper__header{
+    width: 90%;
+    text-align: justify;
+    color:#FFFFFF;
+    line-height: 160%;
+    font-size: min(0.94vw, 1.666vh);
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+    text-indent: 1em;
+}
+
+.rightInnerWrapper__button{
+    color: white;
+    background-color: #303233;
+    border: 1px solid #BABABA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37%;
+    height: 7%;
+    border-radius: 4px;
+}
+
+.rightInnerWrapper__pecipers{
+    width: 90%;
+}
+
+.userRowPlace{
+    height: 6vh;
+    width: 100%;
+    margin-bottom: 1vh;
+}

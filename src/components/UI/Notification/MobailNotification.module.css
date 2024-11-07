@@ -1,0 +1,77 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_wrapper {
+    --ntfWidth: ;
+    --ntfHeight: 41%;
+    width: 58.17vw;
+    height: auto;
+    background-image: radial-gradient(119.9% 119.9% at 58.47% -8.12%, #878A92 0%, #1A1B1D 100%);
+    border-radius: min(2.698651vw, calc(var(--vh, 1vh) * 4.8));
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    font-weight: 400;
+    box-shadow: #1A1B1D 0 0 min(1.49925vw, calc(var(--vh, 1vh) * 2.666667)) min(0.749625vw, calc(var(--vh, 1vh) * 1.333333));
+}
+
+.title {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-size: min(2.398801vw, calc(var(--vh, 1vh) * 4.266667));
+    background: radial-gradient(211.95% 170.37% at 57.76% 59.26%, #FAFAFA 0%, #333333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-top: min(2.398801vw, calc(var(--vh, 1vh) * 4.266667));
+    margin-left: min(2.548726vw, calc(var(--vh, 1vh) * 4.533333));
+}
+
+.msg {
+    text-indent: 2em;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    width: 95%;
+    font-size: min(1.7991vw, calc(var(--vh, 1vh) * 3.2));
+    line-height: min(1.949025vw, calc(var(--vh, 1vh) * 3.466667));
+    text-align: justify;
+    background: radial-gradient(310.45% 249.12% at 72.21% 14.16%, #E4E4E4 0%, #333333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    align-self: center;
+    margin-top: min(2.698651vw, calc(var(--vh, 1vh) * 4.8));
+}
+
+.wrapper button {
+    padding-top: 2.2%;
+    padding-bottom: 2.2%;
+    margin-top: min(2.698651vw, calc(var(--vh, 1vh) * 4.8));
+    margin-bottom: min(2.698651vw, calc(var(--vh, 1vh) * 4.8));
+    width: 50%;
+    align-self: center;
+    border-radius: min(1.49925vw, calc(var(--vh, 1vh) * 2.666667));
+    height: 17.2%;
+    background-image: linear-gradient(209.77deg, #8E8E8E 32.93%, #262626 144.78%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-size: min(1.7991vw, calc(var(--vh, 1vh) * 3.2));
+    text-align: center;
+    color: #FFFFFF;
+}

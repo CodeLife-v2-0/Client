@@ -1,0 +1,82 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.inner__wrapper, .cl__Logo__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cl__Logo__background{
+    background-image: linear-gradient(329deg, #6e6e6e 0%, #222222 34.75%, #000 57.69%);
+    z-index: 1;
+}
+.cl__Logo__background > h1{
+    width: 36.45833vw;
+    height: 10.74074vh;
+    margin-left: 17.91667vw;
+    margin-top: 40.83333vh;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(80deg, rgba(55, 55, 55, 0.55) 0%, rgba(157, 157, 157, 0.55) 100%);
+    font-family: 'Bruno';
+    font-weight: 400;
+    font-size: min(5.0vw, 8.88889vh);
+    letter-spacing: 0.15em;
+    user-select: none;
+    overflow: visible;
+}
+.inner__wrapper{
+    padding-top: 2.87037vh;
+    padding-left: 3.38542vw;
+    padding-right: 3.38542vw;
+    padding-bottom: 2.87037vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.wrapper *::-webkit-scrollbar {
+    height: 55.55556vh;
+    width: 0.57292vw;
+}
+
+.wrapper *::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.wrapper *::-webkit-scrollbar-thumb {
+    background-color: #012C31;
+    border: min(0.05208vw, 0.09259vh) solid #009AAD;
+}
+
+.wrapper *::-webkit-scrollbar-button {
+    display: none;
+}
+
+@-moz-document url-prefix() {
+    .wrapper * {
+        scrollbar-width: 0.52083vw;
+        scrollbar-color: #009AAd rgba(0, 0, 0, 0);
+    }
+}
+
+.notifications__Lessons__Block {
+    display: flex;
+    justify-content: space-between;
+    width: 78.64583vw;
+    height: 55.55556vh;
+}
+
+.certificates__Chat__Block {
+    display: flex;
+    justify-content: space-between;
+    width: 78.64583vw;
+    height: 27.77778vh;
+}

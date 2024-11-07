@@ -1,0 +1,74 @@
+.company_logo {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Inconsolata';
+    --size-shadow-in: 0px;
+    --size-shadow-out: 0px;
+    --color-shadow: rgb(255, 255, 255);
+    font-style: normal;
+    position: relative;
+    font-weight: 700;
+    font-size: min(14vh, 9vw);
+    line-height: min(12vh, 7vw);
+    text-align: center;
+    border-radius: 20px;
+    border: var(--main_color) 6px solid;
+    color: var(--main_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    box-shadow: 0px 0px var(--size-shadow-out) 0px var(--color-shadow);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.company_logo::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    box-shadow: inset 0px 0px var(--size-shadow-in) 0px var(--color-shadow);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/*.company_logo::after{
+    content: "AAAAAAAAAAAAAAAAAAAAAAAAa";
+    position: absolute;
+    overflow: visible;
+    height: 200%;
+    width: 200%;
+    z-index: 2;
+    box-shadow: 0px 0px var(--size-shadow-out) 0px rgb(255, 255, 255);
+    transition: box-shadow 0.3s ease-in-out;
+}*/
+
+.flicker_light {
+    position: relative;
+    overflow: hidden;
+}
+
+.flicker_light::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -30%;
+    left: -100%;
+    width: 7%;
+    height: 150%;
+    background: linear-gradient(190deg, transparent 0, #fff 40%, #fff 60%, transparent 100%);
+    filter: blur(40px);
+    animation: slide 5s ease-in-out infinite alternate;
+    animation-duration: 20s;
+    animation-delay: 20s;
+    transform: rotate(30deg);
+}
+
+@keyframes slide {
+    0% {
+        left: -600%
+    }
+
+    to {
+        left: 200%
+    }
+}
