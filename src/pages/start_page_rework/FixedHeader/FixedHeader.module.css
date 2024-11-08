@@ -1,0 +1,28 @@
+.wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding-left: 13.02083vw;
+    padding-right: 13.02083vw;
+}
+
+.companyBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.72917vw 0.52083vw 0.72917vw 0.52083vw;
+    width: 6.14583vw;
+}
+
+.buttonBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 34.21875vw;
+}

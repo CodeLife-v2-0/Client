@@ -9,6 +9,7 @@ import StartPageMobile from './pages_mobail/start_page/StartPageMobile';
 import MobailNotification from './components/UI/Notification/MobailNotification';
 import PersonalPageMobile from './pages_mobail/personal_page_mobile/PersonalPageMobile';
 import OpenCourseInIntrodues from './pages/start_page/focus_content/composition/curses_list/OpenCourseInIntrodues';
+import StartPageRe from './pages/start_page_rework/StartPageRe';
 
 export type SelectLangState = [number, Dispatch<SetStateAction<number>>];
 
@@ -107,10 +108,10 @@ const App: FC = () => {
             element={
               displayValue === DisplayValue.Mobile
                 ? <StartPageMobile />
-                : <StartPage firstTime={isFirstEnterOnStartPage} setFirstTime={setIsFirstEnterOnStartPage}/>
+                : <StartPageRe />// : <StartPage firstTime={isFirstEnterOnStartPage} setFirstTime={setIsFirstEnterOnStartPage}/>
             }
           />
-          <Route path="/:scrollValue" element={<StartPage firstTime={isFirstEnterOnStartPage} setFirstTime={setIsFirstEnterOnStartPage}/>}/>
+          <Route path="/:scrollValue" element={<StartPage firstTime={isFirstEnterOnStartPage} setFirstTime={setIsFirstEnterOnStartPage} />} />
           <Route path="*" element={<NonExistentPage />} />
           <Route path="personal_account" element={
             displayValue === DisplayValue.Mobile
@@ -118,7 +119,7 @@ const App: FC = () => {
               : <PersonalPage />
           } />
           <Route path="authorization" element={<AuthorizationPage displayValue={displayValue} />} />
-          <Route path="open_course/:courseName/:scrollValue" element={<OpenCourseInIntrodues />}/>
+          <Route path="open_course/:courseName/:scrollValue" element={<OpenCourseInIntrodues />} />
         </Routes>
       </BrowserRouter>
     </>

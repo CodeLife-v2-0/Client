@@ -1,0 +1,20 @@
+.wrapper {
+    position: relative;
+    padding: 0.26042vw 0.78125vw 0.26042vw 0.78125vw;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 0.83333vw;
+    border-radius: 0.26042vw;
+    backdrop-filter: blur(2px);
+    border: none;
+    background: linear-gradient(19deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.1) 100%),
+        linear-gradient(57deg,
+            rgba(255, 255, 255, 0.04) 0%,
+            rgba(255, 255, 255, 0) 37.42%,
+            rgba(255, 255, 255, 0) 100%);
+    & > img{
+        width: 0.83333vw;
+    }
+}
