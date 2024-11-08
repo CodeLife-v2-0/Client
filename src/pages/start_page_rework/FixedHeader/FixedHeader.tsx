@@ -22,7 +22,7 @@ const FixedHeader: FC = () => {
     return (
         <header className={styles.wrapper}>
             <div className={styles.companyBlock}>
-                <img src="/svg/iconRe/logoCO.svg" alt="company-logo" />
+                <img className = {styles.codeLifeImg} src="/svg/iconRe/logoCO.svg" alt="company-logo" />
             </div>
             <div className={styles.buttonBlock}>
                 {buttonBlock}
