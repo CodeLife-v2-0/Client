@@ -18,8 +18,15 @@
             rgba(255, 255, 255, 0.04) 0%,
             rgba(255, 255, 255, 0) 37.42%,
             rgba(255, 255, 255, 0) 100%);
-
+            transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
     &>img {
         width: 0.83333vw;
     }
+}
+.wrapper:hover {
+    background-color: #A64CFF;
+}
+.wrapper:active{
+    background-color: #A64CFF;
+    padding: 0.3125vw 0.78125vw 0.20833vw  0.78125vw;
 }
