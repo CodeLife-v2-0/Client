@@ -6,7 +6,11 @@
     font-size: 0.83333vw;
     border-radius: 0.26042vw;
     backdrop-filter: blur(2px);
-    border: none;
+    border: 0.02604vw solid;
+
+    border-image-source: linear-gradient(96.15deg, rgba(105, 105, 105, 0.1) 4.74%, rgba(123, 123, 123, 0.1) 51.43%, rgba(226, 226, 226, 0.1) 86.55%, rgba(70, 70, 70, 0.1) 95.5%, rgba(70, 70, 70, 0.1) 97.37%);
+
+
     background: linear-gradient(19deg,
             rgba(255, 255, 255, 0) 0%,
             rgba(255, 255, 255, 0.1) 100%),
@@ -14,7 +18,8 @@
             rgba(255, 255, 255, 0.04) 0%,
             rgba(255, 255, 255, 0) 37.42%,
             rgba(255, 255, 255, 0) 100%);
-    & > img{
+
+    &>img {
         width: 0.83333vw;
     }
 }
