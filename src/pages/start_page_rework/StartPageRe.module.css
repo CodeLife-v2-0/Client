@@ -1,5 +1,7 @@
 .wrapper{
+    top: 0;
     width: 100vw;
     height: 500vh;
+    position: relative;
     background-color: #121113;
 }
