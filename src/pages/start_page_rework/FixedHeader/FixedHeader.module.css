@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     position: fixed;
     width: 100vw;
     height: 2.5vw;
@@ -11,18 +11,42 @@
     padding-right: 13.02083vw;
 }
 
-.companyBlock{
+.companyBlock {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.72917vw 0.52083vw 0.72917vw 0.52083vw;
-    width: 6.14583vw;
 }
 
-.buttonBlock{
+.buttonBlock {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
     width: 34.21875vw;
+}
+
+.codeLifeImg {
+    width: 6.14583vw;
+}
+.coLogoSvg{
+    width: 6.14583vw;
+}
+
+@keyframes transparentCursor {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.coLogoSvgPalochka {
+    animation: transparentCursor 1s infinite;
 }
